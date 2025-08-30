@@ -5,39 +5,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  {% seo %} <!-- JSON-LD + meta via jekyll-seo-tag -->
-
-  <title>{{ page.title | default: site.title }}</title>
-  <meta name="description" content="{{ page.description | default: site.description }}" />
-  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+  {% seo %}
 
   <!-- Dark by default; no toggle -->
   <meta name="color-scheme" content="dark light" />
   <meta name="theme-color" content="#0b1020" />
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
 
   <!-- Main CSS -->
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
 
-  <!-- Minimal inline safety so links stay visible/clickable even if CSS fails -->
+  <!-- Minimal inline safety so links remain visible/clickable even if CSS fails -->
   <style>
-    :root{--bg:#0b1020;--surface:#111735;--text:#e6eefc;--brand:#5aa2ff;--border:#22304f}
-    html,body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    :root{--bg:#0b1020;--surface:#111735;--text:#e6eefc;--muted:#9bb0cc;--brand:#5aa2ff;--border:#22304f}
+    html,body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0}
     a{color:var(--brand);text-decoration:none;pointer-events:auto}
     a:hover{text-decoration:underline}
     a:focus-visible,button:focus-visible{outline:3px solid #9cc4ff;outline-offset:2px}
     .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
     .skip-link:focus{left:16px;top:16px;width:auto;height:auto;background:#111735;color:#e6eefc;padding:8px 12px;border:2px solid #5aa2ff;border-radius:8px;z-index:1000}
-    .site-header{background:#1a1f2e;color:#e6eefc}
-    .site-footer{background:#1a1f2e;color:#e6eefc;border-top:1px solid #2b344d}
     .wrapper{max-width:1200px;margin:0 auto;padding:0 20px}
+    .site-header{background:#1a1f2e;color:#e6eefc}
     .site-nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
     .site-title{color:#e6eefc;font-weight:700}
-    .nav-links{display:flex;gap:18px}
+    .nav-links{display:flex;gap:18px;flex-wrap:wrap}
     .page-content{min-height:calc(100vh - 220px);padding:32px 0}
-    .footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+    .site-footer{background:#1a1f2e;color:#e6eefc;border-top:1px solid #2b344d}
+    .footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;padding:24px 0}
     .footer-section h3{margin:0 0 8px 0}
     ul{margin:0;padding-left:18px}
     li{margin:6px 0}
+    .footer-bottom{border-top:1px solid #2b344d;padding:12px 0;color:#9bb0cc}
   </style>
 </head>
 <body class="{% if page.section %}section-{{ page.section }}{% endif %}">
@@ -46,11 +44,12 @@
   <header class="site-header" role="banner">
     <div class="wrapper">
       <nav class="site-nav" aria-label="Main">
-        <a href="{{ '/' | relative_url }}" class="site-title">TeamStation AI — Docs</a>
+        <!-- ✅ Absolute Docs Home links -->
+        <a href="{{ site.url }}{{ site.baseurl }}/" class="site-title">TeamStation AI — Docs</a>
         <div class="nav-links">
-          <a href="{{ '/' | relative_url }}">Docs Home</a>
-          <a href="{{ '/axiom-cortex/' | relative_url }}">Axiom Cortex™</a>
-          <a href="{{ '/publications/' | relative_url }}">Publications</a>
+          <a href="{{ site.url }}{{ site.baseurl }}/">Docs Home</a>
+          <a href="{{ site.baseurl }}/axiom-cortex/">Axiom Cortex™</a>
+          <a href="{{ site.baseurl }}/publications/">Publications</a>
         </div>
       </nav>
     </div>
@@ -92,7 +91,7 @@
         </div>
       </div>
 
-      <div class="footer-bottom" style="padding-top:16px;border-top:1px solid #2b344d;margin-top:16px">
+      <div class="footer-bottom">
         <p>&copy; {{ site.time | date: '%Y' }} TeamStation AI — Nearshore IT Co-Pilot™ & Axiom Cortex™</p>
       </div>
     </div>
