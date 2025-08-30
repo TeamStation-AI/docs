@@ -4,7 +4,7 @@
 title: "TeamStation AI Documentation"
 description: "CTO-grade documentation for Axiom Cortex™ (Cognitive AI evaluation) and the Nearshore IT Co-Pilot™ platform. Expert technical insights for enterprise AI solutions."
 url: "" # DNS-agnostic - will work with GitHub Pages default domain
-baseurl: "" # DNS-agnostic
+baseurl: "/docs" # Required for GitHub Project Pages to load CSS and assets correctly
 
 # Site settings
 author: "TeamStation AI"
