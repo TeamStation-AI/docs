@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  {% seo %} <!-- JSON-LD + SEO tags -->
+  {% seo %} <!-- JSON-LD + meta via jekyll-seo-tag -->
 
   <title>{{ page.title | default: site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}" />
@@ -15,32 +15,45 @@
   <meta name="color-scheme" content="dark light" />
   <meta name="theme-color" content="#0b1020" />
 
+  <!-- Main CSS -->
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
 
-  <!-- Minimal accessibility & dark baseline even if CSS fails -->
+  <!-- Minimal inline safety so links stay visible/clickable even if CSS fails -->
   <style>
     :root{--bg:#0b1020;--surface:#111735;--text:#e6eefc;--brand:#5aa2ff;--border:#22304f}
-    html,body{background:var(--bg);color:var(--text)}
-    a{color:var(--brand)}
+    html,body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:var(--brand);text-decoration:none;pointer-events:auto}
+    a:hover{text-decoration:underline}
     a:focus-visible,button:focus-visible{outline:3px solid #9cc4ff;outline-offset:2px}
     .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
     .skip-link:focus{left:16px;top:16px;width:auto;height:auto;background:#111735;color:#e6eefc;padding:8px 12px;border:2px solid #5aa2ff;border-radius:8px;z-index:1000}
     .site-header{background:#1a1f2e;color:#e6eefc}
     .site-footer{background:#1a1f2e;color:#e6eefc;border-top:1px solid #2b344d}
-    .content-card{background:#23272e;border-color:#333;color:#e0e0e0}
+    .wrapper{max-width:1200px;margin:0 auto;padding:0 20px}
+    .site-nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
+    .site-title{color:#e6eefc;font-weight:700}
+    .nav-links{display:flex;gap:18px}
+    .page-content{min-height:calc(100vh - 220px);padding:32px 0}
+    .footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+    .footer-section h3{margin:0 0 8px 0}
+    ul{margin:0;padding-left:18px}
+    li{margin:6px 0}
   </style>
 </head>
 <body class="{% if page.section %}section-{{ page.section }}{% endif %}">
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header" role="banner">
-    <nav class="site-nav" aria-label="Main">
-      <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
-      <div class="nav-links">
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/axiom-cortex/' | relative_url }}">Axiom Cortex™</a>
-      </div>
-    </nav>
+    <div class="wrapper">
+      <nav class="site-nav" aria-label="Main">
+        <a href="{{ '/' | relative_url }}" class="site-title">TeamStation AI — Docs</a>
+        <div class="nav-links">
+          <a href="{{ '/' | relative_url }}">Docs Home</a>
+          <a href="{{ '/axiom-cortex/' | relative_url }}">Axiom Cortex™</a>
+          <a href="{{ '/publications/' | relative_url }}">Publications</a>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="page-content" id="main" tabindex="-1">
@@ -56,19 +69,31 @@
           <h3>{{ site.title }}</h3>
           <p>{{ site.description }}</p>
         </div>
+
         <div class="footer-section">
           <h3>Authority Links</h3>
           <ul>
-            <!-- Canonical anchors (as required) -->
-            <li><a href="https://teamstation.dev/nearshore-it-co-pilot">nearshore IT platform</a></li>
+            <!-- ✅ Correct platform URL -->
+            <li><a href="https://teamstation.dev/nearshore-integrated-services">nearshore IT platform</a></li>
             <li><a href="https://teamstation.dev/technical-interview-evaluation">Cognitive AI evaluation</a></li>
             <li><a href="https://teamstation.dev/latam-talent">hire LATAM engineers</a></li>
             <li><a href="https://teamstation.dev/nearshore-it-staff-augmentation-pricing/flexible-secure-device-management-latam-it">devices and MDM</a></li>
           </ul>
         </div>
+
+        <div class="footer-section">
+          <h3>Publications</h3>
+          <ul>
+            <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5165433">SSRN: Redesigning Human Capacity (5165433)</a></li>
+            <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5253470">SSRN Working Paper (5253470)</a></li>
+            <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5188490">SSRN Working Paper (5188490)</a></li>
+            <li><a href="https://scholar.google.com/citations?user=aNol-ycAAAAJ">Google Scholar — TeamStation AI</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+
+      <div class="footer-bottom" style="padding-top:16px;border-top:1px solid #2b344d;margin-top:16px">
+        <p>&copy; {{ site.time | date: '%Y' }} TeamStation AI — Nearshore IT Co-Pilot™ & Axiom Cortex™</p>
       </div>
     </div>
   </footer>
