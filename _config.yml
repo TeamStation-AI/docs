@@ -1,2 +1,92 @@
+# =========================
+# TeamStation AI — Docs
+# GitHub Pages config (Project Pages)
+# Site URL: https://teamstation-ai.github.io/docs/
+# =========================
+
+title: "TeamStation AI Documentation"
+description: "CTO-grade docs for Axiom Cortex™ (Cognitive AI) and the Nearshore IT Co-Pilot™ platform."
+
+# IMPORTANT: Matches your GitHub Pages address
 url: "https://teamstation-ai.github.io"
-baseurl: "/docs"
+baseurl: "/docs"   # <- do not remove the leading slash
+
+# Content & build
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+timezone: America/Mexico_City
+
+# Plugins (all allowed on GitHub Pages)
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
+# Sass (safe to keep; works even if you don’t use SCSS)
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Collections (publish the Axiom Cortex & Co-Pilot sections)
+collections:
+  axiom_cortex:
+    output: true
+    permalink: /axiom-cortex/:name/
+  copilot:
+    output: true
+    permalink: /co-pilot/:name/
+
+# Defaults (make pages use the 'page' layout and tag their section)
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+      author: "TeamStation AI"
+  - scope:
+      path: ""
+      type: axiom_cortex
+    values:
+      layout: page
+      author: "TeamStation AI"
+      section: axiom-cortex
+  - scope:
+      path: ""
+      type: copilot
+    values:
+      layout: page
+      author: "TeamStation AI"
+      section: co-pilot
+
+# SEO (jekyll-seo-tag reads these)
+seo:
+  type: Organization
+  name: TeamStation AI
+  links:
+    - https://teamstation.dev
+    - https://github.com/TeamStation-AI
+
+# Social (optional; also used by jekyll-seo-tag)
+social:
+  type: Organization
+  name: TeamStation AI
+  links:
+    - https://teamstation.dev
+    - https://github.com/TeamStation-AI
+
+# Include & exclude
+include:
+  - robots.txt
+  - humans.txt
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+
+# Analytics placeholders (leave empty if not used)
+google_analytics:
+google_site_verification:
