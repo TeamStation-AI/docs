@@ -2,7 +2,11 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="dark light"><meta name="theme-color" content="#0b1020">
-<title>TeamStation AI — Docs Home (Nearshore IT Co-Pilot™ & Axiom Cortex™)</title>
+
+<title>Axiom Cortex & Nearshore IT Co-Pilot Docs | TeamStation AI</title>
+<meta name="description" content="Docs for Axiom Cortex (Cognitive AI evaluation) and the Nearshore IT Co-Pilot: 44 psychometric+NLP signals, language-fairness calibration, and BARS.">
+<link rel="canonical" href="https://docs.teamstation.dev/">
+
 <style>
 :root{--bg:#0b1020;--surface:#111735;--text:#e6eefc;--muted:#9bb0cc;--brand:#5aa2ff;--border:#22304f}
 html,body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
@@ -26,16 +30,87 @@ ul.tight li{margin:6px 0}
 .callout{border:1px dashed var(--border);border-radius:12px;padding:14px;background:rgba(17,23,53,.35)}
 h1,h2,h3{line-height:1.25}
 </style>
+
+<!-- Inline JSON-LD so this page is fully self-contained -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"Organization",
+      "@id":"https://teamstation.dev/#organization",
+      "name":"TeamStation AI",
+      "url":"https://teamstation.dev",
+      "sameAs":[
+        "https://docs.teamstation.dev",
+        "https://github.com/TeamStation-AI",
+        "https://scholar.google.com/citations?user=aNol-ycAAAAJ"
+      ]
+    },
+    {
+      "@type":"WebSite",
+      "@id":"https://docs.teamstation.dev/#website",
+      "url":"https://docs.teamstation.dev/",
+      "name":"TeamStation AI Documentation",
+      "publisher":{"@id":"https://teamstation.dev/#organization"},
+      "inLanguage":"en"
+    },
+    {
+      "@type":"WebPage",
+      "@id":"https://docs.teamstation.dev/#webpage",
+      "url":"https://docs.teamstation.dev/",
+      "name":"Axiom Cortex & Nearshore IT Co-Pilot Docs | TeamStation AI",
+      "isPartOf":{"@id":"https://docs.teamstation.dev/#website"},
+      "about":[
+        {"@type":"Thing","name":"Axiom Cortex documentation"},
+        {"@type":"Thing","name":"nearshore IT documentation"},
+        {"@type":"Thing","name":"cognitive AI evaluation"},
+        {"@type":"Thing","name":"language-fairness calibration"},
+        {"@type":"Thing","name":"BARS reviews"},
+        {"@type":"Thing","name":"semantic chunking in RAG"},
+        {"@type":"Thing","name":"staged multi-step prompting"}
+      ],
+      "inLanguage":"en"
+    },
+    {
+      "@type":"ScholarlyArticle",
+      "headline":"Redesigning Human Capacity in Nearshore IT Staff Augmentation",
+      "author":[{"@type":"Person","name":"Lonnie McRorey"},{"@type":"Person","name":"Dan Diachenko"}],
+      "datePublished":"2025-03-04",
+      "publisher":{"@type":"Organization","name":"SSRN"},
+      "url":"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5165433",
+      "identifier":"https://doi.org/10.2139/ssrn.5165433",
+      "inLanguage":"en"
+    },
+    {
+      "@type":"ScholarlyArticle",
+      "headline":"SSRN Working Paper",
+      "datePublished":"2025-08-01",
+      "publisher":{"@type":"Organization","name":"SSRN"},
+      "url":"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5253470",
+      "inLanguage":"en"
+    },
+    {
+      "@type":"ScholarlyArticle",
+      "headline":"SSRN Working Paper",
+      "datePublished":"2025-06-15",
+      "publisher":{"@type":"Organization","name":"SSRN"},
+      "url":"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5188490",
+      "inLanguage":"en"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <a class="skip-link" href="#content">Skip to content</a>
 
 <nav aria-label="Top">
   <span class="tag">TeamStation AI — Docs</span>
-  <a href="/docs/">Docs Home</a>
-  <a href="/docs/axiom-cortex/">Axiom Cortex™</a>
-  <a href="/docs/publications/">Publications</a>
-  <!-- Required authority anchors (correct platform URL) -->
+  <a href="/">Docs Home</a>
+  <a href="/axiom-cortex/">Axiom Cortex™</a>
+  <a href="/publications/">Publications</a>
+  <!-- Authority anchors (correct platform URL) -->
   <a href="https://teamstation.dev/nearshore-integrated-services">nearshore IT platform</a>
   <a href="https://teamstation.dev/technical-interview-evaluation">Cognitive AI evaluation</a>
   <a href="https://teamstation.dev/latam-talent">hire LATAM engineers</a>
@@ -44,50 +119,47 @@ h1,h2,h3{line-height:1.25}
 
 <main id="content" tabindex="-1">
   <p class="kicker">Docs Home</p>
-  <h1>Nearshore IT Co-Pilot™ & Axiom Cortex™ — the why, the how, the outcomes</h1>
-  <p>We built TeamStation AI so US CTOs can extend product teams into LATAM <em>without chaos</em>: predictable hiring, day-one readiness, secure devices, and measurable performance — all under one SLA. Our Cognitive AI turns interviews into <strong>evidence</strong>, not vibes, so you get the best-aligned problem solvers faster and more fairly.</p>
+  <h1>Nearshore IT Co-Pilot™ & Axiom Cortex™ — why it exists, how it works, what you get</h1>
+  <p>We built TeamStation AI so US CTOs can extend teams into LATAM <strong>cost-effectively, accurately, and safely</strong>: predictable hiring, day-one readiness, secure devices, and measurable performance—under one SLA. Axiom Cortex™ turns interviews into <strong>evidence</strong>, not vibes, so you get the best-aligned problem solvers faster, with language-fairness guaranteed.</p>
 
   <p class="callout">
-    <a class="btn btn-primary" href="/docs/axiom-cortex/"><strong>Open Axiom Cortex™ Documentation →</strong></a>
+    <a class="btn btn-primary" href="/axiom-cortex/"><strong>Open Axiom Cortex documentation →</strong></a>
     &nbsp;&nbsp;
-    <a class="btn" href="https://teamstation.dev/nearshore-integrated-services">See the Nearshore IT Co-Pilot™ platform →</a>
+    <a class="btn" href="https://teamstation.dev/nearshore-integrated-services">Explore Nearshore IT Co-Pilot™ →</a>
   </p>
 
   <hr>
 
-  <div class="grid grid-2" aria-label="The Story">
+  <div class="grid grid-2" aria-label="Story and Platform">
     <section class="card">
-      <h2>Why we built TeamStation AI</h2>
+      <h2>Why TeamStation AI</h2>
       <ul class="tight">
-        <li>Hiring in LATAM was fragmented: vendors, recruiters, spreadsheets, and bias-prone interviews.</li>
-        <li>Onboarding stalled: unmanaged devices, slow access, compliance gaps, and week-one idle time.</li>
-        <li>Performance was fuzzy: opinions over observable behaviors; no shared definitions for “good.”</li>
+        <li>Hiring in LATAM was fragmented and biased; onboarding was slow and risky.</li>
+        <li>We unified an <strong>Intelligent Services Infrastructure</strong> and a <strong>Cognitive AI Operating System</strong>.</li>
+        <li>Outcome: faster offers, day-one productivity, clear accountability.</li>
       </ul>
-      <p>We unified the stack into an <strong>Intelligent Services Infrastructure</strong> and paired it with a <strong>Cognitive AI Operating System</strong> so teams start productive, secure, and measurable from day one.</p>
     </section>
 
     <section class="card">
-      <h2>What the Nearshore IT Co-Pilot™ does</h2>
+      <h2>What Nearshore IT Co-Pilot™ includes</h2>
       <ul class="tight">
-        <li>Hire, equip, secure, and pay LATAM engineers — <strong>under one SLA</strong>.</li>
-        <li>Devices + MDM (Mobile Device Management), baseline security, identity, access, and compliance.</li>
-        <li>Payroll/EOR, benefits, and optional offices — all integrated with onboarding flows.</li>
-        <li>Process you can trust: Demo → Platform Onboarding → Post Jobs & Calibration → Interview & Evaluation → Hire & Day-One Onboarding → Performance (BARS) & Growth.</li>
+        <li>Hire, equip, secure, and pay LATAM engineers—<strong>one SLA</strong>.</li>
+        <li>Devices + MDM (Mobile Device Management), security baselines, identity, access, compliance.</li>
+        <li>Payroll/EOR, benefits, optional offices; day-one onboarding & 30-60-90 plans.</li>
       </ul>
-      <p><a class="btn" href="https://teamstation.dev/nearshore-integrated-services">Explore integrated services →</a></p>
+      <p><a class="btn" href="https://teamstation.dev/nearshore-integrated-services">See integrated services →</a></p>
     </section>
   </div>
 
-  <div class="grid grid-2" aria-label="The Science">
+  <div class="grid grid-2" aria-label="Science and Outcomes">
     <section class="card">
-      <h2>Axiom Cortex™ — Cognitive AI Operating System</h2>
+      <h2>Axiom Cortex™ — Cognitive AI evaluation</h2>
       <ul class="tight">
-        <li><strong>44 psychometric + NLP signals</strong> for alignment, analysis, and synthesis of engineering evidence.</li>
+        <li><strong>44 psychometric + NLP signals</strong> for alignment, analysis, synthesis.</li>
         <li>Method: <em>semantic chunking in RAG and staged/multi-step prompting</em> with <strong>language-fairness calibration</strong>.</li>
         <li><strong>Expert review of flags before roll-up</strong>; mapped to <strong>BARS</strong> (ratings tied to observable behaviors).</li>
-        <li>L2-aware scoring separates content signal from delivery noise, so ideas are judged fairly.</li>
       </ul>
-      <p><a class="btn" href="/docs/axiom-cortex/scientific-foundations/">Read the Scientific Foundations →</a></p>
+      <p><a class="btn" href="/axiom-cortex/scientific-foundations/">Read the Scientific Foundations →</a></p>
     </section>
 
     <section class="card">
@@ -97,7 +169,6 @@ h1,h2,h3{line-height:1.25}
         <li><strong>Device MTPD ≤ 5 days</strong>; <strong>MDM enrollment ≥ 99% (24h)</strong>.</li>
         <li><strong>90-day retention ≈ 96%</strong>; <strong>50–70% savings vs. US onshore</strong>.</li>
       </ul>
-      <p><a class="btn" href="https://teamstation.dev/latam-talent">See LATAM talent coverage →</a></p>
     </section>
   </div>
 
@@ -110,17 +181,17 @@ h1,h2,h3{line-height:1.25}
         <li>SSRN Working Paper: <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5188490">abstract_id=5188490</a></li>
         <li><a href="https://scholar.google.com/citations?user=aNol-ycAAAAJ">Google Scholar — TeamStation AI</a></li>
       </ul>
-      <p><a class="btn" href="/docs/publications/">Open Publications page →</a></p>
+      <p><a class="btn" href="/publications/">Open Publications page →</a></p>
     </section>
 
     <section class="card">
       <h2>What to expect as a CTO</h2>
       <ul class="tight">
-        <li>Clear evidence over opinions; bias-aware scoring with uncertainty bounds.</li>
+        <li>Evidence over opinions; bias-aware scoring with uncertainty bounds.</li>
         <li>Day-one readiness: devices, access, docs, first ticket, 30-60-90 plan.</li>
         <li>Quarterly performance with <strong>BARS</strong> and promotion signals across L1–L4.</li>
       </ul>
-      <p><a class="btn" href="https://teamstation.dev/technical-interview-evaluation">See evaluation process →</a></p>
+      <p><a class="btn" href="/axiom-cortex/">Axiom Cortex documentation →</a></p>
     </section>
   </div>
 
