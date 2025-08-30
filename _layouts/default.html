@@ -12,6 +12,8 @@
   <meta name="googlebot" content="index, follow">
   <meta name="author" content="{{ page.author | default: site.author }}">
   <meta name="generator" content="Jekyll {{ jekyll.version }}">
+  <meta name="theme-color" content="#0d1117">
+  <meta name="color-scheme" content="dark light">
   
   {% if page.section %}
   <meta name="section" content="{{ page.section }}">
@@ -43,19 +45,28 @@
 </head>
 <body class="{% if page.section %}section-{{ page.section }}{% endif %}">
   
+  <!-- Skip link for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
   <header class="site-header">
     <nav class="site-nav">
-      <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
-      <div class="nav-links">
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/axiom-cortex/' | relative_url }}">Axiom Cortex™</a>
-        <a href="{{ '/co-pilot/' | relative_url }}">Co-Pilot™</a>
-        <a href="{{ '/research' | relative_url }}">Research</a>
+      <div class="wrapper">
+        <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
+        <div class="nav-links">
+          <a href="{{ '/' | relative_url }}">Home</a>
+          <a href="{{ '/axiom-cortex/' | relative_url }}">Axiom Cortex™</a>
+          <a href="{{ '/co-pilot/' | relative_url }}">Co-Pilot™</a>
+          <a href="{{ '/research' | relative_url }}">Research</a>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle between light and dark theme">
+            <span class="theme-icon" aria-hidden="true">🌙</span>
+            <span class="theme-text">Dark</span>
+          </button>
+        </div>
       </div>
     </nav>
   </header>
 
-  <main class="page-content">
+  <main id="main-content" class="page-content">
     <div class="wrapper">
       {{ content }}
     </div>
@@ -88,5 +99,58 @@
       </div>
     </div>
   </footer>
+
+  <!-- Theme Toggle Script -->
+  <script>
+    (function() {
+      const themeToggle = document.getElementById('theme-toggle');
+      const themeIcon = themeToggle.querySelector('.theme-icon');
+      const themeText = themeToggle.querySelector('.theme-text');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+      
+      // Get stored theme or default to dark mode
+      let currentTheme = localStorage.getItem('theme') || 'dark';
+      
+      // Apply theme on load
+      function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        if (theme === 'light') {
+          themeIcon.textContent = '☀️';
+          themeText.textContent = 'Light';
+          themeToggle.setAttribute('aria-label', 'Switch to dark theme');
+        } else {
+          themeIcon.textContent = '🌙';
+          themeText.textContent = 'Dark';
+          themeToggle.setAttribute('aria-label', 'Switch to light theme');
+        }
+      }
+      
+      // Initialize theme
+      applyTheme(currentTheme);
+      
+      // Theme toggle functionality
+      themeToggle.addEventListener('click', function() {
+        currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        applyTheme(currentTheme);
+        localStorage.setItem('theme', currentTheme);
+      });
+      
+      // Listen for system theme changes
+      prefersDark.addEventListener('change', function(e) {
+        if (!localStorage.getItem('theme')) {
+          currentTheme = e.matches ? 'dark' : 'light';
+          applyTheme(currentTheme);
+        }
+      });
+      
+      // Keyboard support for theme toggle
+      themeToggle.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          themeToggle.click();
+        }
+      });
+    })();
+  </script>
 </body>
 </html>

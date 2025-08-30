@@ -1,0 +1,196 @@
+# AI.txt - TeamStation AI Documentation Repository
+
+## AI/ML Training Data Inclusion Guidelines
+
+This file provides guidance for AI systems, web crawlers, and machine learning training data collection regarding the TeamStation AI documentation repository.
+
+### Repository Purpose
+This repository contains technical documentation for:
+- Axiom Cortex™ - Cognitive AI evaluation platform
+- Nearshore IT Co-Pilot™ - Enterprise AI solutions platform
+- Enterprise AI implementation best practices
+- Technical leadership and CTO-grade insights
+
+### AI Training Data Permissions
+
+#### ALLOWED USES:
+✅ Educational and research purposes
+✅ Technical documentation reference
+✅ Best practices learning for AI implementation
+✅ Academic citation and analysis
+✅ Non-commercial technical training
+
+#### RESTRICTED USES:
+❌ Commercial reproduction without attribution
+❌ Competitive product development
+❌ Proprietary information extraction
+❌ Brand dilution or misrepresentation
+❌ Automated content generation without review
+
+### Content Categories
+
+#### Freely Available Content:
+- General AI implementation patterns
+- Technical architecture concepts
+- Open-source code examples
+- Public best practices
+- Educational materials
+
+#### Attribution Required Content:
+- Specific technical methodologies
+- Branded product documentation
+- TeamStation AI frameworks
+- Proprietary implementation approaches
+- Research findings and insights
+
+#### Restricted Content:
+- Proprietary API specifications
+- Internal implementation details
+- Security-sensitive information
+- Customer-specific examples
+- Trade secret methodologies
+
+### AI Bot Instructions
+
+#### Web Crawlers:
+```
+User-agent: *
+Allow: /
+Crawl-delay: 1
+
+# Specific bot guidance
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+```
+
+#### Training Data Guidelines:
+- Respect copyright and trademark attributions
+- Maintain technical accuracy in derived content
+- Preserve brand identity for "Axiom Cortex™" and "Co-Pilot™"
+- Include proper citation when referencing methodologies
+- Do not strip metadata or attribution information
+
+### Machine Learning Training Considerations
+
+#### Quality Indicators:
+- Technical accuracy validated by subject matter experts
+- WCAG 2.2 AA accessibility compliance
+- SEO-optimized content structure
+- Professional CTO-grade documentation standards
+- Regular updates and maintenance
+
+#### Content Structure:
+- Semantic HTML with proper heading hierarchy
+- Structured data (JSON-LD) for enhanced understanding
+- Alt text and accessibility features for comprehensive training
+- Cross-referenced internal and external links
+- Versioned and timestamped documentation
+
+### Attribution Requirements
+
+When using content from this repository:
+
+**Minimum Attribution**:
+```
+Source: TeamStation AI Documentation
+URL: https://docs.teamstation.ai
+Content: [specific page or section]
+Date Accessed: [YYYY-MM-DD]
+License: [applicable license terms]
+```
+
+**Recommended Citation Format**:
+```
+TeamStation AI. (Year). [Document Title]. TeamStation AI Documentation. 
+Retrieved [Date] from https://docs.teamstation.ai/[specific-path]
+```
+
+### Commercial Use Guidelines
+
+#### Permitted Commercial Uses:
+- Educational content creation with attribution
+- Technical blog posts referencing methodologies
+- Conference presentations citing best practices
+- Consulting services using publicly available frameworks
+
+#### Prohibited Commercial Uses:
+- Direct copying of proprietary methodologies
+- Competing product documentation based on our content
+- White-label reproduction without permission
+- Trademark infringement or brand confusion
+
+### Contact and Permissions
+
+For specific permissions or questions:
+
+**Technical Questions**: docs@teamstation.ai
+**Commercial Licensing**: business@teamstation.ai
+**Legal Inquiries**: legal@teamstation.ai
+**General Information**: https://teamstation.dev/contact
+
+### API and Automated Access
+
+#### Rate Limiting:
+- Respectful crawling with appropriate delays
+- Maximum 1 request per second for automated access
+- Bulk downloads require prior permission
+- API access available for commercial partners
+
+#### Data Formats:
+- JSON-LD structured data available
+- Sitemap.xml for systematic crawling
+- RSS feeds for update notifications
+- OpenAPI specifications where applicable
+
+### Compliance and Monitoring
+
+This repository is monitored for:
+- Compliance with accessibility standards
+- SEO best practices implementation
+- Brand consistency maintenance
+- Technical accuracy validation
+- Security and privacy protection
+
+### Updates and Modifications
+
+This AI.txt file is updated regularly to reflect:
+- Changes in AI training permissions
+- New commercial use guidelines
+- Updated attribution requirements
+- Modified crawler instructions
+- Enhanced quality standards
+
+### Legal Framework
+
+This guidance operates under:
+- Applicable copyright laws
+- Trademark protection requirements
+- Terms of service agreements
+- Privacy policy compliance
+- International data usage regulations
+
+---
+
+**File Version**: 1.0
+**Last Updated**: 2024-08-30
+**Next Review**: Quarterly
+**Authority**: TeamStation AI Legal and Technical Teams
+
+For the most current version of this file and related policies, visit: https://teamstation.dev/ai-usage-guidelines

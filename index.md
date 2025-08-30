@@ -8,6 +8,14 @@ seo:
   name: TeamStation AI Documentation
 ---
 
+<div class="plain-language-summary">
+  <h2>Plain Language Summary</h2>
+  <p><strong>What this is:</strong> Technical documentation for TeamStation AI's enterprise AI solutions - Axiom Cortex™ (AI evaluation platform) and Nearshore IT Co-Pilot™ (AI consulting services).</p>
+  <p><strong>Who it's for:</strong> CTOs, technical leaders, and AI implementation teams seeking expert guidance on enterprise AI solutions.</p>
+  <p><strong>What you'll learn:</strong> How to implement, evaluate, and optimize AI systems in enterprise environments with proven frameworks and best practices.</p>
+  <p><strong>Reading time:</strong> 3-5 minutes for overview, 15-30 minutes for detailed sections.</p>
+</div>
+
 <div class="hero-section">
   <h1>TeamStation AI Documentation</h1>
   <p class="hero-description">CTO-grade technical documentation for enterprise AI solutions, cognitive evaluation frameworks, and nearshore IT excellence.</p>
@@ -70,6 +78,15 @@ Whether you're implementing cognitive AI evaluation frameworks with Axiom Cortex
 1. **Platform Overview** - Start with [Axiom Cortex™]({{ '/axiom-cortex/' | relative_url }}) for cognitive AI evaluation or [Co-Pilot™]({{ '/co-pilot/' | relative_url }}) for enterprise AI solutions
 2. **Technical Implementation** - Review our [research insights]({{ '/research' | relative_url }}) for best practices and architectural guidance
 3. **Enterprise Integration** - Explore [enterprise AI solutions](https://teamstation.dev/enterprise-ai-solutions) for scalable implementation strategies
+
+## Additional Resources
+
+Expand your knowledge with our comprehensive resource library:
+
+- **[AI Governance Framework](https://teamstation.dev/ai-governance-framework)** - Establish ethical AI practices and compliance protocols
+- **[Cognitive AI Research](https://teamstation.dev/cognitive-ai-research)** - Latest findings in cognitive load assessment and AI evaluation methodologies  
+- **[Enterprise AI Training](https://teamstation.dev/enterprise-ai-training)** - Professional development programs for technical teams
+- **[Technical Documentation Standards](https://teamstation.dev/technical-documentation-standards)** - Best practices for creating accessible, comprehensive documentation
 
 ---
 
