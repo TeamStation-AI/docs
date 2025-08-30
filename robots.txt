@@ -1,3 +1,4 @@
+# TeamStation AI docs robots — allow crawl
 User-agent: *
 Allow: /
 
