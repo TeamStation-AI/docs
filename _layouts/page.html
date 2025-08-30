@@ -5,67 +5,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  {% seo %}
+  {% seo %} <!-- JSON-LD + SEO tags -->
 
   <title>{{ page.title | default: site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}" />
   <link rel="canonical" href="{{ page.url | absolute_url }}" />
 
+  <!-- Dark by default; no toggle -->
   <meta name="color-scheme" content="dark light" />
   <meta name="theme-color" content="#0b1020" />
 
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
 
-  <!-- Inline theme overrides that respond to html[data-theme] -->
+  <!-- Minimal accessibility & dark baseline even if CSS fails -->
   <style>
-    :root{
-      --bg-dark:#0b1020; --surface-dark:#111735; --text-dark:#e6eefc; --brand-dark:#5aa2ff; --border-dark:#22304f;
-      --bg-light:#ffffff; --surface-light:#f6f8fa; --text-light:#111416; --brand-light:#0366d6; --border-light:#e1e4e8;
-    }
-    /* Theme surfaces */
-    html[data-theme="dark"] body{background:var(--bg-dark);color:var(--text-dark);}
-    html[data-theme="light"] body{background:var(--bg-light);color:var(--text-light);}
-    /* Links */
-    html[data-theme="dark"] a{color:var(--brand-dark);}
-    html[data-theme="light"] a{color:var(--brand-light);}
-    /* Header/Footer basic contrast */
-    html[data-theme="dark"] .site-header{background:#1a1f2e;color:#e6eefc;}
-    html[data-theme="light"] .site-header{background:#24292e;color:#fff;}
-    html[data-theme="dark"] .site-footer{background:#1a1f2e;color:#e6eefc;border-top:1px solid #2b344d;}
-    html[data-theme="light"] .site-footer{background:#f6f8fa;color:#111;border-top:1px solid #e1e4e8;}
-    /* Cards */
-    html[data-theme="dark"] .content-card{background:#23272e;border-color:#333;color:#e0e0e0;}
-    html[data-theme="light"] .content-card{background:#fff;border-color:#e1e4e8;color:#111;}
-    /* Accessibility helpers */
+    :root{--bg:#0b1020;--surface:#111735;--text:#e6eefc;--brand:#5aa2ff;--border:#22304f}
+    html,body{background:var(--bg);color:var(--text)}
+    a{color:var(--brand)}
     a:focus-visible,button:focus-visible{outline:3px solid #9cc4ff;outline-offset:2px}
     .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
     .skip-link:focus{left:16px;top:16px;width:auto;height:auto;background:#111735;color:#e6eefc;padding:8px 12px;border:2px solid #5aa2ff;border-radius:8px;z-index:1000}
-    .toggle{margin-left:12px;background:transparent;border:1px solid currentColor;color:inherit;padding:6px 10px;border-radius:10px;cursor:pointer}
+    .site-header{background:#1a1f2e;color:#e6eefc}
+    .site-footer{background:#1a1f2e;color:#e6eefc;border-top:1px solid #2b344d}
+    .content-card{background:#23272e;border-color:#333;color:#e0e0e0}
   </style>
-
-  <script>
-    (function(){
-      const KEY='tsdocs-theme';
-      const root=document.documentElement;
-
-      // prefer saved; otherwise default to DARK to meet the requirement
-      const saved = localStorage.getItem(KEY);
-      const initial = saved ? saved : 'dark';
-      root.setAttribute('data-theme', initial);
-
-      window.toggleTheme = function(){
-        const now = root.getAttribute('data-theme') || 'dark';
-        const next = (now === 'dark') ? 'light' : 'dark';
-        root.setAttribute('data-theme', next);
-        localStorage.setItem(KEY, next);
-      };
-
-      // Keyboard shortcut: press "T" to toggle
-      addEventListener('keydown', function(e){
-        if ((e.key||'').toLowerCase() === 't') toggleTheme();
-      });
-    })();
-  </script>
 </head>
 <body class="{% if page.section %}section-{{ page.section }}{% endif %}">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -76,7 +39,6 @@
       <div class="nav-links">
         <a href="{{ '/' | relative_url }}">Home</a>
         <a href="{{ '/axiom-cortex/' | relative_url }}">Axiom Cortex™</a>
-        <button class="toggle" onclick="toggleTheme()" aria-label="Toggle dark/light">🌙/☀️ (T)</button>
       </div>
     </nav>
   </header>
@@ -97,10 +59,11 @@
         <div class="footer-section">
           <h3>Authority Links</h3>
           <ul>
+            <!-- Canonical anchors (as required) -->
             <li><a href="https://teamstation.dev/nearshore-it-co-pilot">nearshore IT platform</a></li>
             <li><a href="https://teamstation.dev/technical-interview-evaluation">Cognitive AI evaluation</a></li>
             <li><a href="https://teamstation.dev/latam-talent">hire LATAM engineers</a></li>
-            <li><a href="https://teamstation.dev/nearshore-it-staff-augmentation-pricing/flexible-secure-device-management-flexible-secure-device-management-latam-it">devices and MDM</a></li>
+            <li><a href="https://teamstation.dev/nearshore-it-staff-augmentation-pricing/flexible-secure-device-management-latam-it">devices and MDM</a></li>
           </ul>
         </div>
       </div>
