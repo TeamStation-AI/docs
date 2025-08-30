@@ -12,36 +12,35 @@ These publications underpin Axiom Cortex™ and the Nearshore IT Co-Pilot™ pla
 ---
 
 ## 2025 — Redesigning Human Capacity in Nearshore IT Staff Augmentation
-**Lonnie McRorey; Dan Diachenko.** SSRN. DOI:
-<a href="https://doi.org/10.2139/ssrn.5165433" target="_blank" rel="noopener">10.2139/ssrn.5165433</a><br>
-<strong>Link:</strong> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5165433" target="_blank" rel="noopener">View on SSRN</a>
+**Lonnie McRorey; Dan Diachenko.** SSRN. DOI: [10.2139/ssrn.5165433](https://doi.org/10.2139/ssrn.5165433)  
+**Link:** [View on SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5165433)
 
 **Relevance:** Formalizes the **RC×TA→EHD** forecasting frame, connects measurement to operating KPIs, and describes platform integration for nearshore hiring—context for Axiom Cortex™ measurement → decision flow inside Nearshore IT Co-Pilot™.
 
 ---
 
 ## 2025 — SSRN Working Paper (abstract_id=5253470)
-<strong>Authors:</strong> TeamStation AI contributors (see SSRN page)<br>
-<strong>Link:</strong> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5253470" target="_blank" rel="noopener">View on SSRN</a>
+**Authors:** TeamStation AI contributors (see SSRN page)  
+**Link:** [View on SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5253470)
 
 **Relevance:** Extends the methodology for **L2-aware evaluation** and operational alignment. See SSRN page for full metadata and abstract.
 
 ---
 
 ## 2025 — SSRN Working Paper (abstract_id=5188490)
-<strong>Authors:</strong> TeamStation AI contributors (see SSRN page)<br>
-<strong>Link:</strong> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5188490" target="_blank" rel="noopener">View on SSRN</a>
+**Authors:** TeamStation AI contributors (see SSRN page)  
+**Link:** [View on SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5188490)
 
 **Relevance:** Documents elements of **network psychometrics** and reliability monitoring used by Axiom Cortex™. See SSRN page for full metadata and abstract.
 
 ---
 
-**Author profile on Google Scholar:** <a href="https://scholar.google.com/citations?user=aNol-ycAAAAJ" target="_blank" rel="noopener">Google Scholar — TeamStation AI</a>
+**Author profile on Google Scholar:** [Google Scholar — TeamStation AI](https://scholar.google.com/citations?user=aNol-ycAAAAJ)
 
 ---
 
 ## Required anchors (authority)
-- <a href="https://teamstation.dev/nearshore-it-co-pilot">nearshore IT platform</a><br>
-- <a href="https://teamstation.dev/technical-interview-evaluation">Cognitive AI evaluation</a><br>
-- <a href="https://teamstation.dev/latam-talent">hire LATAM engineers</a><br>
-- <a href="https://teamstation.dev/nearshore-it-staff-augmentation-pricing/flexible-secure-device-management-latam-it">devices and MDM</a>
+- [nearshore IT platform](https://teamstation.dev/nearshore-it-co-pilot)  
+- [Cognitive AI evaluation](https://teamstation.dev/technical-interview-evaluation)  
+- [hire LATAM engineers](https://teamstation.dev/latam-talent)  
+- [devices and MDM](https://teamstation.dev/nearshore-it-staff-augmentation-pricing/flexible-secure-device-management-latam-it)
