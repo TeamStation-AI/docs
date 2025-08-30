@@ -1,0 +1,80 @@
+<!doctype html><html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light"><meta name="theme-color" content="#0b1020">
+<title>TeamStation AI — Nearshore IT Co-Pilot™ Docs (Fallback)</title>
+<style>
+:root{--bg:#0b1020;--surface:#111735;--text:#e6eefc;--muted:#9bb0cc;--brand:#5aa2ff;--border:#22304f}
+html,body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+main{max-width:920px;margin:40px auto;padding:0 20px;line-height:1.65}
+nav{max-width:920px;margin:20px auto;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+a{color:var(--brand);text-decoration:none}
+a:focus-visible,button:focus-visible{outline:3px solid #9cc4ff;outline-offset:2px} /* WCAG focus */
+pre,code{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px}
+.tag{background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:6px 10px;color:var(--muted)}
+.toggle{margin-left:auto;background:var(--surface);border:1px solid var(--border);color:var(--text);padding:6px 10px;border-radius:10px;cursor:pointer}
+hr{border:none;border-top:1px solid var(--border);margin:28px 0}
+.small{color:var(--muted);font-size:.95rem}
+</style>
+<script>
+(function(){
+  const KEY='tsdocs-theme'; const root=document.documentElement;
+  const sys=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+  root.dataset.theme=localStorage.getItem(KEY)||sys;
+  window.toggleTheme=()=>{ const next=root.dataset.theme==='dark'?'light':'dark';
+    root.dataset.theme=next; localStorage.setItem(KEY,next); };
+  addEventListener('keydown',e=>{ if(e.key.toLowerCase()==='t') toggleTheme(); });
+})();
+</script>
+<script type="application/ld+json">
+{ "@context":"https://schema.org", "@type":"WebPage",
+  "@id": "", "url": "", "name":"TeamStation AI — Docs (Fallback)" }
+</script>
+<script>
+/* Ensure absolute JSON-LD @id/url using the real page URL */
+(function(){
+  const data={ "@context":"https://schema.org", "@type":"WebPage",
+    "@id": location.href+"#webpage", "url": location.href,
+    "name":"TeamStation AI — Nearshore IT Co-Pilot™ Docs (Fallback)" };
+  const s=document.createElement('script'); s.type="application/ld+json";
+  s.textContent=JSON.stringify(data); document.currentScript.replaceWith(s);
+})();
+</script>
+</head>
+<body>
+<nav aria-label="Top">
+  <span class="tag">TeamStation AI — Docs</span>
+  <a href="./">Docs Home</a>
+  <a href="https://teamstation.dev/nearshore-it-co-pilot">nearshore IT platform</a>
+  <a href="https://teamstation.dev/technical-interview-evaluation">Cognitive AI evaluation</a>
+  <a href="https://teamstation.dev/latam-talent">hire LATAM engineers</a>
+  <a href="https://teamstation.dev/nearshore-it-staff-augmentation-pricing/flexible-secure-device-management-latam-it">devices and MDM</a>
+  <button class="toggle" onclick="toggleTheme()" aria-label="Toggle dark/light">🌙/☀️ (T)</button>
+</nav>
+
+<main id="content" tabindex="-1">
+  <h1>Nearshore IT Co-Pilot™ & Axiom Cortex™ — Docs (Fallback)</h1>
+  <p><strong>Plain-language summary:</strong> This page proves our platform and science for CTOs. It’s dark-mode by default, keyboard accessible, and includes our required anchors to TeamStation’s main site. Press <kbd>T</kbd> to toggle theme. Links above go to the full pages.</p>
+
+  <h2>Axiom Cortex™ — Cognitive AI</h2>
+  <ul>
+    <li>44 psychometric + NLP signals over LLMs for accurate alignment, analysis, and synthesis of nearshore IT talent.</li>
+    <li>Uses <em>semantic chunking in RAG and staged/multi-step prompting</em> with <strong>language-fairness calibration</strong>.</li>
+    <li>Includes <strong>expert review of flags before roll-up</strong>; maps results to <strong>BARS</strong> (ratings tied to observable behaviors).</li>
+  </ul>
+
+  <h2>Nearshore IT Co-Pilot™ — Intelligent Services</h2>
+  <p>One platform to hire, equip, secure, and pay LATAM engineers under one SLA. Devices/MDM, security baselines, payroll/EOR, compliance, and offices—integrated.</p>
+
+  <h2>Required anchors (SEO & authority)</h2>
+  <ul>
+    <li><a href="https://teamstation.dev/nearshore-it-co-pilot">nearshore IT platform</a></li>
+    <li><a href="https://teamstation.dev/technical-interview-evaluation">Cognitive AI evaluation</a></li>
+    <li><a href="https://teamstation.dev/latam-talent">hire LATAM engineers</a></li>
+    <li><a href="https://teamstation.dev/nearshore-it-staff-augmentation-pricing/flexible-secure-device-management-latam-it">devices and MDM</a></li>
+  </ul>
+
+  <hr>
+  <p class="small">Trust lines: Time-to-Offer ≈ 9 days • First-PR ≤ 7–14 days • Device MTPD ≤ 5 days • MDM ≥ 99% (24h).</p>
+</main>
+</body></html>
