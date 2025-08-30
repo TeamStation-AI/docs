@@ -280,3 +280,67 @@
     padding: 1.5rem;
   }
 }
+
+/* Dark mode support for layout elements */
+@media (prefers-color-scheme: dark) {
+  .site-header {
+    background-color: #1a1a1a;
+    color: #eee;
+  }
+  
+  .site-footer {
+    background-color: #1a1a1a;
+    color: #eee;
+    border-top-color: #444;
+  }
+  
+  .footer-section h3 {
+    color: #f0f0f0;
+  }
+  
+  .footer-section ul a {
+    color: #aaa;
+  }
+  
+  .footer-section ul a:hover {
+    color: #88aaff;
+  }
+  
+  .footer-bottom {
+    color: #aaa;
+  }
+  
+  .footer-bottom a {
+    color: #aaa;
+  }
+  
+  .footer-bottom a:hover {
+    color: #88aaff;
+  }
+  
+  .content-card {
+    background: #23272e;
+    border-color: #333;
+    color: #e0e0e0;
+  }
+  
+  .page-header {
+    border-bottom-color: #444;
+  }
+  
+  .page-title {
+    color: #f0f0f0;
+  }
+  
+  .page-description {
+    color: #aaa;
+  }
+  
+  .breadcrumb {
+    color: #aaa;
+  }
+  
+  .breadcrumb a {
+    color: #88aaff;
+  }
+}
