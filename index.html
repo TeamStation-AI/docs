@@ -6,55 +6,42 @@
 <style>
 :root{--bg:#0b1020;--surface:#111735;--text:#e6eefc;--muted:#9bb0cc;--brand:#5aa2ff;--border:#22304f}
 html,body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
-main{max-width:920px;margin:40px auto;padding:0 20px;line-height:1.65}
-nav{max-width:920px;margin:20px auto;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+main{max-width:960px;margin:40px auto;padding:0 20px;line-height:1.65}
+nav{max-width:960px;margin:20px auto;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
 a{color:var(--brand);text-decoration:none}
-a:focus-visible,button:focus-visible{outline:3px solid #9cc4ff;outline-offset:2px} /* WCAG focus */
-pre,code{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px}
+a:focus-visible,button:focus-visible{outline:3px solid #9cc4ff;outline-offset:2px}
 .tag{background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:6px 10px;color:var(--muted)}
-.toggle{margin-left:auto;background:var(--surface);border:1px solid var(--border);color:var(--text);padding:6px 10px;border-radius:10px;cursor:pointer}
+.btn{display:inline-block;padding:10px 14px;border:1px solid var(--border);border-radius:10px;background:var(--surface)}
 hr{border:none;border-top:1px solid var(--border);margin:28px 0}
 .small{color:var(--muted);font-size:.95rem}
+.skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip-link:focus{left:16px;top:16px;width:auto;height:auto;background:#111735;color:#e6eefc;padding:8px 12px;border:2px solid #5aa2ff;border-radius:8px;z-index:1000}
 </style>
-<script>
-(function(){
-  const KEY='tsdocs-theme'; const root=document.documentElement;
-  const sys=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
-  root.dataset.theme=localStorage.getItem(KEY)||sys;
-  window.toggleTheme=()=>{ const next=root.dataset.theme==='dark'?'light':'dark';
-    root.dataset.theme=next; localStorage.setItem(KEY,next); };
-  addEventListener('keydown',e=>{ if(e.key.toLowerCase()==='t') toggleTheme(); });
-})();
-</script>
-<script type="application/ld+json">
-{ "@context":"https://schema.org", "@type":"WebPage",
-  "@id": "", "url": "", "name":"TeamStation AI — Docs (Fallback)" }
-</script>
-<script>
-/* Ensure absolute JSON-LD @id/url using the real page URL */
-(function(){
-  const data={ "@context":"https://schema.org", "@type":"WebPage",
-    "@id": location.href+"#webpage", "url": location.href,
-    "name":"TeamStation AI — Nearshore IT Co-Pilot™ Docs (Fallback)" };
-  const s=document.createElement('script'); s.type="application/ld+json";
-  s.textContent=JSON.stringify(data); document.currentScript.replaceWith(s);
-})();
-</script>
 </head>
 <body>
+<a class="skip-link" href="#content">Skip to content</a>
+
 <nav aria-label="Top">
   <span class="tag">TeamStation AI — Docs</span>
-  <a href="./">Docs Home</a>
+  <a href="/docs/">Docs Home</a>
+  <a href="/docs/axiom-cortex/">Axiom Cortex™</a>
+  <a href="/docs/publications/">Publications</a>
+  <!-- Required authority anchors -->
   <a href="https://teamstation.dev/nearshore-it-co-pilot">nearshore IT platform</a>
   <a href="https://teamstation.dev/technical-interview-evaluation">Cognitive AI evaluation</a>
   <a href="https://teamstation.dev/latam-talent">hire LATAM engineers</a>
   <a href="https://teamstation.dev/nearshore-it-staff-augmentation-pricing/flexible-secure-device-management-latam-it">devices and MDM</a>
-  <button class="toggle" onclick="toggleTheme()" aria-label="Toggle dark/light">🌙/☀️ (T)</button>
 </nav>
 
 <main id="content" tabindex="-1">
   <h1>Nearshore IT Co-Pilot™ & Axiom Cortex™ — Docs (Fallback)</h1>
-  <p><strong>Plain-language summary:</strong> This page proves our platform and science for CTOs. It’s dark-mode by default, keyboard accessible, and includes our required anchors to TeamStation’s main site. Press <kbd>T</kbd> to toggle theme. Links above go to the full pages.</p>
+  <p><strong>Plain-language summary:</strong> This microsite proves our platform and science for CTOs. It’s dark-mode by default, keyboard accessible, and links to the full sections.</p>
+
+  <p>
+    <a class="btn" href="/docs/axiom-cortex/">Open Axiom Cortex™ Documentation →</a>
+    &nbsp;&nbsp;
+    <a class="btn" href="/docs/publications/">Publications & Research →</a>
+  </p>
 
   <h2>Axiom Cortex™ — Cognitive AI</h2>
   <ul>
