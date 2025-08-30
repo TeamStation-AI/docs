@@ -8,6 +8,14 @@ _site/
 vendor/
 Gemfile.lock
 
+# Governance files should be included (override any exclusions)
+!consent.yml
+!objective.md
+!invariants.yml
+!banned_phrases.txt
+!preflight-template.md
+!claims_ledger.json
+
 # OS files
 .DS_Store
 Thumbs.db

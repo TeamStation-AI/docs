@@ -1,0 +1,169 @@
+# TeamStation AI Documentation - Banned Phrases and Content Guidelines
+# Prohibited language to ensure inclusive, accurate, and compliant content
+
+# DISCRIMINATORY LANGUAGE - NEVER USE
+# These terms may exclude or discriminate against individuals or groups
+crazy
+insane
+crippled
+lame
+dumb
+stupid
+retarded
+invalid
+normal user
+typical user
+guys (when referring to mixed groups)
+
+# ABLEIST LANGUAGE - AVOID
+# Replace with inclusive alternatives
+blind spot → gap, oversight
+deaf to → ignoring, unaware of
+cripple → disable, limit
+dummy → placeholder, example
+sanity check → verification, validation
+master/slave → primary/replica, main/secondary
+
+# GENDERED ASSUMPTIONS - USE NEUTRAL ALTERNATIVES
+guys → everyone, team, folks
+manpower → workforce, staff
+chairman → chairperson, chair
+businessman → businessperson, executive
+
+# TECHNICAL INACCURACIES - ENSURE PRECISION
+simple → straightforward, clear
+easy → accessible, user-friendly
+just → only, simply
+obviously → clearly, as shown
+of course → naturally, as expected
+
+# AI/ML PROBLEMATIC TERMS - USE RESPONSIBLE LANGUAGE
+artificial intelligence → AI system, AI technology
+smart → intelligent, adaptive
+learns → processes, analyzes
+thinks → computes, evaluates
+understands → interprets, processes
+
+# COGNITIVE EVALUATION SENSITIVE TERMS
+# Be careful with these in context of cognitive assessment
+superior/inferior intelligence → higher/lower performance
+natural ability → developed capability
+talent → skill, competency
+gifted → highly capable
+
+# SECURITY AND PRIVACY VIOLATIONS
+password → [REDACTED] (in examples)
+secret → [REDACTED] (in examples)
+private key → [REDACTED] (in examples)
+personally identifiable → PII, personal data
+
+# INAPPROPRIATE BUSINESS LANGUAGE
+cheap → cost-effective, economical
+expensive → premium, investment-level
+kill → stop, terminate, end
+hit → reach, achieve
+ninja → expert, specialist
+rockstar → exceptional, outstanding
+
+# MEDICAL/HEALTH METAPHORS - AVOID IN TECH CONTEXT
+virus → malware, malicious code
+infected → compromised, affected
+healthy → functioning, operational
+sick → malfunctioning, degraded
+
+# VIOLENT METAPHORS - USE PROFESSIONAL ALTERNATIVES
+kill process → terminate process
+shoot → send, transmit
+attack → attempt, approach
+execute → run, perform
+trigger → initiate, activate
+
+# EXCLUSIONARY TECH LANGUAGE
+newbie → newcomer, new user
+guru → expert, specialist
+whitelist → allowlist, approved list
+blacklist → blocklist, denied list
+native → built-in, core
+
+# ACCESSIBILITY VIOLATIONS
+click here → select, choose (use descriptive link text)
+see → view, review, check
+watch → observe, monitor
+look → examine, review
+hear → listen, notice
+
+# COGNITIVE LOAD PROBLEMATIC PHRASES
+brain dump → information transfer, knowledge sharing
+mindshare → attention, focus
+brainstorm → ideate, collaborate
+no-brainer → straightforward, clear choice
+
+# CULTURAL SENSITIVITY VIOLATIONS
+third world → developing nations, emerging markets
+oriental → Asian (be specific to region/country)
+exotic → unique, distinctive
+primitive → basic, fundamental
+
+# APPROVED ALTERNATIVES FOR COMMON CASES
+
+# Instead of "guys" use:
+# - everyone
+# - team
+# - folks
+# - colleagues
+
+# Instead of "simple/easy" use:
+# - straightforward
+# - accessible
+# - user-friendly
+# - clear
+
+# Instead of "just/simply" use:
+# - only
+# - specifically
+# - exactly
+# - precisely
+
+# Instead of "obviously" use:
+# - clearly
+# - as shown
+# - as demonstrated
+# - notably
+
+# For cognitive evaluation content, use:
+# - performance levels (not intelligence levels)
+# - capabilities (not abilities)
+# - skills (not talents)
+# - competencies (not gifts)
+
+# CONTEXT-SPECIFIC GUIDELINES
+
+# When discussing AI/ML:
+# - Use "AI system" instead of "artificial intelligence"
+# - Use "processes" instead of "thinks"
+# - Use "analyzes" instead of "learns"
+# - Use "interprets" instead of "understands"
+
+# When discussing accessibility:
+# - Use person-first language: "person with disability" not "disabled person"
+# - Use "accessible" not "handicap accessible"
+# - Use "cognitive differences" not "cognitive impairments"
+
+# When discussing performance:
+# - Use "high-performing" not "smart"
+# - Use "optimized" not "intelligent"
+# - Use "efficient" not "clever"
+
+# ENFORCEMENT NOTES
+# - These guidelines apply to all user-facing content
+# - Code comments and documentation included
+# - Review all content changes against this list
+# - Automated scanning recommended for common violations
+# - Manual review required for context-sensitive terms
+
+# REPORTING VIOLATIONS
+# If you find content that violates these guidelines:
+# 1. Create an issue with "content-compliance" label
+# 2. Include the problematic text and suggested replacement
+# 3. Tag the content owner for immediate review
+# 4. Update this list if new patterns are identified

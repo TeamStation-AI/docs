@@ -1,0 +1,58 @@
+# TeamStation AI Documentation - User Consent Configuration
+# Governance file for AI platform compliance and user data handling
+
+consent:
+  version: "1.0.0"
+  last_updated: "2025-08-30"
+  
+  # Data collection and processing consent
+  data_collection:
+    enabled: true
+    purposes:
+      - "Technical documentation access analytics"
+      - "Platform usage optimization"
+      - "Accessibility feature improvement"
+    retention_period: "24 months"
+    user_rights:
+      - "Access to collected data"
+      - "Data portability"
+      - "Deletion upon request"
+      - "Correction of inaccurate data"
+  
+  # Cookie and tracking consent
+  cookies:
+    essential: true
+    analytics: true
+    marketing: false
+    personalization: true
+  
+  # AI processing consent for cognitive evaluation platform
+  ai_processing:
+    enabled: true
+    scope:
+      - "Documentation interaction analysis"
+      - "User experience optimization"
+      - "Accessibility pattern recognition"
+    data_types:
+      - "Navigation patterns"
+      - "Content engagement metrics"
+      - "Accessibility tool usage"
+    
+  # Third-party integrations
+  third_party:
+    github_pages: true
+    google_analytics: false  # Placeholder - not yet implemented
+    teamstation_platform: true
+    
+  # Compliance frameworks
+  compliance:
+    gdpr: true
+    ccpa: true
+    section_508: true
+    wcag_aa: true
+    
+  # Contact for data protection
+  contact:
+    email: "privacy@teamstation.ai"
+    role: "Data Protection Officer"
+    response_time: "72 hours"

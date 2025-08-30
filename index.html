@@ -1,0 +1,119 @@
+<!doctype html><html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light"><meta name="theme-color" content="#0b1020">
+<title>TeamStation AI — Nearshore IT Co-Pilot™ Docs (Fallback)</title>
+<style>
+:root{--bg:#0b1020;--surface:#111735;--text:#e6eefc;--muted:#9bb0cc;--brand:#5aa2ff;--border:#22304f}
+html,body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+main{max-width:920px;margin:40px auto;padding:0 20px;line-height:1.65}
+nav{max-width:920px;margin:20px auto;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible,button:focus-visible{outline:3px solid #9cc4ff;outline-offset:2px} /* WCAG focus */
+pre,code{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px}
+.tag{background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:6px 10px;color:var(--muted)}
+.toggle{margin-left:auto;background:var(--surface);border:1px solid var(--border);color:var(--text);padding:6px 10px;border-radius:10px;cursor:pointer}
+hr{border:none;border-top:1px solid var(--border);margin:28px 0}
+.small{color:var(--muted);font-size:.95rem}
+</style>
+<script>
+(function(){
+  const KEY='tsdocs-theme'; const root=document.documentElement;
+  const sys=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+  root.dataset.theme=localStorage.getItem(KEY)||sys;
+  
+  // Accessible theme toggle
+  window.toggleTheme=function(){
+    const current=root.dataset.theme;
+    const next=current==='dark'?'light':'dark';
+    root.dataset.theme=next;
+    localStorage.setItem(KEY,next);
+  };
+  
+  // Keyboard support for theme toggle
+  document.addEventListener('keydown',function(e){
+    if(e.key==='t'||e.key==='T'){
+      if(!e.target.matches('input,textarea,[contenteditable]')){
+        e.preventDefault();
+        toggleTheme();
+      }
+    }
+  });
+})();
+</script>
+</head>
+<body>
+
+<nav role="navigation" aria-label="Main navigation">
+  <span class="tag">TeamStation AI — Docs</span>
+  <a href="./">Docs Home</a>
+  <a href="https://teamstation.dev/nearshore-it-co-pilot">nearshore IT platform</a>
+  <a href="https://teamstation.dev/technical-interview-evaluation">Cognitive AI evaluation</a>
+  <a href="https://teamstation.dev/latam-talent">hire LATAM engineers</a>
+  <a href="https://teamstation.dev/nearshore-it-staff-augmentation-pricing/flexible-secure-device-management-latam-it">devices and MDM</a>
+  <button class="toggle" onclick="toggleTheme()" aria-label="Toggle dark/light theme">🌙/☀️ (T)</button>
+</nav>
+
+<main id="content" tabindex="-1">
+  <h1>Nearshore IT Co-Pilot™ & Axiom Cortex™ — Docs (Fallback)</h1>
+  
+  <p><strong>Plain-language summary:</strong> This page proves our platform and science for CTOs. It's dark-mode by default, keyboard accessible, and includes our required anchors to TeamStation's main site. Press <kbd>T</kbd> to toggle theme. Links above go to the full pages.</p>
+
+  <h2>Axiom Cortex™ — Cognitive AI</h2>
+  <ul>
+    <li>44 psychometric + NLP signals over LLMs for accurate alignment, analysis, and synthesis of nearshore IT talent.</li>
+    <li>Uses <em>semantic chunking in RAG and staged/multi-step prompting</em> with <strong>language-fairness calibration</strong>.</li>
+    <li>Includes <strong>expert review of flags before roll-up</strong>; maps results to <strong>BARS</strong> (ratings tied to observable behaviors).</li>
+  </ul>
+
+  <h2>Nearshore IT Co-Pilot™ — Intelligent Services</h2>
+  <ul>
+    <li><strong>Custom AI solutions architecture</strong> with proven enterprise patterns and implementation strategies.</li>
+    <li>End-to-end <strong>technical leadership consulting</strong> for AI transformation initiatives and cognitive evaluation frameworks.</li>
+    <li><strong>Nearshore development teams</strong> with advanced AI expertise and proven delivery methodologies.</li>
+  </ul>
+
+  <h2>Enterprise AI Implementation Framework</h2>
+  <ul>
+    <li><strong>Technical Excellence:</strong> CTO-grade documentation and implementation guides for enterprise AI solutions.</li>
+    <li><strong>Accessibility:</strong> WCAG 2.1 AA compliant platform with comprehensive keyboard navigation and screen reader support.</li>
+    <li><strong>AI Governance:</strong> Ethical AI practices with transparent cognitive evaluation methodologies and bias prevention.</li>
+    <li><strong>Security:</strong> Enterprise-grade security with HTTPS enforcement, CSP headers, and comprehensive audit trails.</li>
+  </ul>
+
+  <hr>
+
+  <h2>Technical Documentation Sections</h2>
+  <ul>
+    <li><strong><a href="./axiom-cortex/">Axiom Cortex™ Platform</a></strong> — Cognitive AI evaluation platform with API references and implementation guides</li>
+    <li><strong><a href="./co-pilot/">Nearshore IT Co-Pilot™</a></strong> — Enterprise AI solutions covering service methodologies and technical frameworks</li>
+    <li><strong><a href="./research/">Research & Insights</a></strong> — Latest cognitive AI research and enterprise implementation best practices</li>
+  </ul>
+
+  <h2>Governance & Compliance</h2>
+  <p>This documentation platform maintains strict governance and compliance standards:</p>
+  <ul>
+    <li><strong>Accessibility:</strong> WCAG 2.1 AA compliance with regular audits and validation</li>
+    <li><strong>Privacy:</strong> GDPR and CCPA compliant with transparent consent mechanisms</li>
+    <li><strong>Security:</strong> Enterprise security standards with regular penetration testing</li>
+    <li><strong>AI Ethics:</strong> Responsible AI practices with bias prevention and transparency requirements</li>
+  </ul>
+
+  <p class="small">
+    <strong>Compliance Files:</strong> 
+    <a href="./consent.yml">consent.yml</a> • 
+    <a href="./objective.md">objective.md</a> • 
+    <a href="./invariants.yml">invariants.yml</a> • 
+    <a href="./banned_phrases.txt">banned_phrases.txt</a> • 
+    <a href="./preflight-template.md">preflight-template.md</a> • 
+    <a href="./claims_ledger.json">claims_ledger.json</a>
+  </p>
+
+  <hr>
+
+  <p><strong>For CTOs & Technical Leaders:</strong> This documentation provides enterprise-grade technical insights for implementing cognitive AI evaluation frameworks and scaling AI initiatives with expert nearshore development teams.</p>
+
+  <p class="small">Trust lines: Time-to-Offer ≈ 9 days • First-PR ≤ 7–14 days • Device MTPD ≤ 5 days • MDM ≥ 99% (24h).</p>
+</main>
+</body></html>
