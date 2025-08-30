@@ -17,9 +17,9 @@ This is the official documentation hub for **TeamStation-AI**'s cutting-edge AI 
 ## Quick Navigation
 
 ### Getting Started
-- [📚 Getting Started Guide](docs/getting-started.html) - Begin your journey with our platforms
-- [🔧 Installation](docs/getting-started.html#installation) - Setup instructions
-- [⚡ Quick Start](docs/getting-started.html#quick-start) - Get up and running fast
+- [📚 Getting Started Guide](docs/getting-started/) - Begin your journey with our platforms
+- [🔧 Installation](docs/getting-started/#installation) - Setup instructions
+- [⚡ Quick Start](docs/getting-started/#quick-start) - Get up and running fast
 
 ### Documentation Sections
 - **API Reference** - Comprehensive API documentation
