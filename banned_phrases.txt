@@ -1,0 +1,323 @@
+# Banned Phrases and Content Validation
+# TeamStation AI Documentation Repository
+# Prohibited content to maintain accessibility, legal compliance, and brand integrity
+
+# This file is used by automated content validation systems to prevent
+# the inclusion of problematic phrases, terms, or patterns that could:
+# - Violate accessibility guidelines
+# - Create legal liability
+# - Damage brand reputation
+# - Exclude or marginalize users
+# - Compromise technical accuracy
+
+# Format: Each line represents a banned phrase or pattern
+# Comments (lines starting with #) are ignored
+# Case-insensitive matching is used
+# Regular expressions are supported (prefix with regex:)
+
+# === ACCESSIBILITY VIOLATIONS ===
+
+# Ableist Language
+click here
+see below
+look at
+watch this
+listen to
+simply
+just
+easy
+obviously
+clearly
+of course
+blindly
+turn a deaf ear
+falls on deaf ears
+crippled
+handicapped
+lame
+dumb
+stupid
+retarded
+insane
+crazy
+mental
+psycho
+schizo
+OCD
+ADD
+ADHD (when used colloquially)
+
+# Vision-Related Exclusions
+see the image
+look at the chart
+view the diagram
+as shown above
+as shown below
+in the image above
+in the image below
+red text
+green text
+blue text
+colored text
+bright colors
+dark colors
+
+# Motor Function Assumptions
+right-click
+double-click
+hover over
+drag and drop
+swipe left
+swipe right
+pinch to zoom
+gesture
+
+# === LEGAL AND COMPLIANCE VIOLATIONS ===
+
+# Discriminatory Language
+guys (when addressing mixed groups)
+blacklist
+whitelist
+master/slave
+grandfathered
+tribe
+powwow
+spirit animal
+open the kimono
+rule of thumb
+peanut gallery
+sold down the river
+off the reservation
+
+# Medical Claims (FDA/FTC Violations)
+cure
+heal
+treat
+diagnose
+medical advice
+health benefits
+therapeutic
+clinically proven (without evidence)
+FDA approved (when false)
+doctor recommended (without evidence)
+
+# Absolute Claims (Legal Liability)
+guaranteed
+100% secure
+impossible to hack
+never fails
+always works
+completely safe
+risk-free
+bulletproof
+unhackable
+unbreakable
+
+# === BRAND INTEGRITY VIOLATIONS ===
+
+# Competitor Disparagement
+better than [competitor]
+unlike [competitor]
+[competitor] can't
+[competitor] doesn't
+worst
+terrible
+awful
+garbage
+trash
+sucks
+inferior
+pathetic
+
+# Unprofessional Language
+awesome
+amazing
+incredible
+mind-blowing
+revolutionary
+game-changing
+disruptive
+paradigm shift
+synergy
+leverage (as verb)
+circle back
+low-hanging fruit
+move the needle
+drinking the kool-aid
+
+# === TECHNICAL INACCURACY PATTERNS ===
+
+# Oversimplified Technical Claims
+magic
+automatically works
+no configuration needed
+plug and play
+one-size-fits-all
+works everywhere
+universal solution
+silver bullet
+holy grail
+
+# Security Overstatements
+military-grade
+bank-level security
+impenetrable
+fortress
+iron-clad
+bulletproof security
+hack-proof
+uncrackable
+
+# Performance Exaggerations
+lightning fast
+instant
+immediate
+real-time (when not accurate)
+zero latency
+unlimited
+infinite
+limitless
+
+# === COGNITIVE ACCESSIBILITY VIOLATIONS ===
+
+# Jargon Without Explanation
+regex:(API|SDK|CLI|GUI|IDE|REST|SOAP|JSON|XML|SQL|NoSQL|DevOps|MLOps|CI/CD|SaaS|PaaS|IaaS) without definition
+regex:Technical terms in ALL CAPS without explanation
+regex:Three or more acronyms in succession without definition
+
+# Complex Sentence Structures
+regex:Sentences exceeding 25 words without justification
+regex:More than 3 subordinate clauses
+regex:Passive voice overuse (detected by automation)
+
+# Ambiguous Instructions
+something like
+kind of
+sort of
+pretty much
+more or less
+around
+approximately (when precision is needed)
+etc.
+and so on
+and more
+
+# === EXCLUSIONARY PATTERNS ===
+
+# Geographic Assumptions
+obviously (everyone knows)
+as we all know
+common knowledge
+standard practice
+typical
+normal
+usual
+regular
+ordinary
+
+# Cultural Assumptions
+Christmas (use holiday)
+Christian names (use given names)
+maiden name (use family name)
+guys and gals
+ladies and gentlemen
+
+# Socioeconomic Assumptions
+cheap
+expensive
+budget
+premium
+high-end
+low-end
+luxury
+bargain
+
+# === TEMPORAL VIOLATIONS ===
+
+# Outdated References
+current year (without specification)
+recent
+lately
+these days
+nowadays
+modern
+today
+this year
+last year
+next year
+
+# Time-Sensitive Language
+now
+currently
+at this time
+as of now
+up to date
+latest
+newest
+cutting-edge
+
+# === REGULATORY COMPLIANCE VIOLATIONS ===
+
+# GDPR/Privacy Violations
+we collect your data
+we track you
+we monitor
+personal information (without disclosure)
+behavioral data
+tracking cookies (without consent notice)
+
+# Accessibility Law Violations
+if you can see
+if you can hear
+using a mouse
+keyboard users only
+visual inspection required
+audio cues only
+color coding only
+
+# === PATTERN-BASED VIOLATIONS ===
+
+# Regular Expression Patterns for Advanced Detection
+regex:(?i)(simple|easy|just|simply|obvious|clear|trivial)\s+(to|for|that|when)
+regex:(?i)(all|every)\s+(users?|people|developers?)\s+(can|will|should|must)
+regex:(?i)(works?|runs?|functions?)\s+(on|with|in)\s+all
+regex:(?i)(never|always|100%|completely|totally|absolutely)\s+
+regex:(?i)(click|tap|touch|press|hit)\s+(here|this|that|the)
+regex:(?i)(see|view|look|watch|observe)\s+(the|this|that|above|below)
+regex:(?i)(simply|just|only|merely)\s+(need|have|do|use|install|configure)
+
+# URL and Link Patterns
+regex:(?i)click\s+here
+regex:(?i)read\s+more
+regex:(?i)learn\s+more
+regex:(?i)find\s+out\s+more
+regex:(?i)discover\s+more
+
+# Image and Media References
+regex:(?i)(image|picture|photo|graphic|chart|diagram)\s+(shows?|displays?|depicts?)
+regex:(?i)(video|animation|recording)\s+(shows?|demonstrates?|explains?)
+regex:(?i)(green|red|blue|yellow|orange|purple|pink|black|white|gray|grey)\s+(text|button|link|box|area)
+
+# Interaction Assumptions
+regex:(?i)(mouse|cursor|pointer)\s+(over|on|to|at)
+regex:(?i)(right|left)\s+(click|button|side)
+regex:(?i)(swipe|pinch|zoom|rotate|tilt|shake)
+
+# === CONTENT VALIDATION NOTES ===
+
+# Automated systems will:
+# 1. Scan all content for these phrases during the build process
+# 2. Flag violations for manual review
+# 3. Prevent deployment if critical violations are found
+# 4. Generate reports for content improvement
+# 5. Suggest alternatives when possible
+
+# Exceptions can be made for:
+# - Historical quotes (with proper context)
+# - Technical specifications (with accessibility alternatives)
+# - Legal requirements (with plain language explanations)
+# - Code examples (with descriptive comments)
+
+# Last updated: 2025-08-30
+# Review frequency: Monthly
+# Next review: 2025-09-30

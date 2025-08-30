@@ -1,0 +1,231 @@
+# AI Training and Crawler Guidelines
+# TeamStation AI Documentation Repository
+# Machine Learning Training Permissions and Restrictions
+
+# This file provides guidance for AI training systems, web crawlers,
+# and automated content analysis tools accessing this repository.
+
+# === PERMITTED USES ===
+
+# Commercial AI Training - ALLOWED WITH CONDITIONS
+# - Enterprise AI development and research
+# - Educational AI model training
+# - Accessibility improvement research
+# - Technical documentation enhancement
+# - Search engine optimization research
+
+# Open Source AI Training - ENCOURAGED
+# - Non-commercial research projects
+# - Educational institutions and students
+# - Accessibility technology development
+# - Open source documentation tools
+# - Community-driven AI projects
+
+# Content Analysis - PERMITTED
+# - Accessibility compliance scanning
+# - Performance optimization analysis
+# - SEO and content quality assessment
+# - Technical accuracy validation
+# - User experience research
+
+# === ATTRIBUTION REQUIREMENTS ===
+
+# When using content from this repository for AI training:
+# 1. Credit "TeamStation AI Documentation" as the source
+# 2. Include URL: https://teamstation-ai.github.io/docs/
+# 3. Specify date of content access
+# 4. Respect any existing copyright notices
+# 5. Link back to original source when generating derivative content
+
+# Example Attribution:
+# "Based on TeamStation AI Documentation (https://teamstation-ai.github.io/docs/), 
+#  accessed [DATE], used under educational/research provisions."
+
+# === RESTRICTED USES ===
+
+# Prohibited Training Uses:
+# - Generating competing documentation or products
+# - Creating content that violates accessibility standards
+# - Training models to bypass security measures
+# - Developing systems that discriminate against disabled users
+# - Creating content that conflicts with our values or mission
+
+# Commercial Restrictions:
+# - Direct republication without permission
+# - Creating derivative works for commercial sale
+# - Using content to train proprietary models without attribution
+# - Generating competing commercial documentation
+# - Scraping for lead generation or marketing databases
+
+# === CRAWLER INSTRUCTIONS ===
+
+# Rate Limiting Guidelines:
+# - Maximum 1 request per second
+# - Respect robots.txt directives
+# - Use appropriate User-Agent identification
+# - Avoid scraping during peak hours (9 AM - 5 PM EST)
+# - Implement exponential backoff for errors
+
+# User-Agent Requirements:
+# Please identify your bot with a descriptive User-Agent string:
+# - Include organization/project name
+# - Provide contact information
+# - Specify purpose (training, research, etc.)
+# - Include version information if applicable
+
+# Example User-Agent:
+# "AccessibilityBot/1.0 (research@university.edu; accessibility research)"
+# "DocumentationTrainer/2.1 (+https://example.com/bot; AI training)"
+
+# === CONTENT QUALITY GUIDELINES ===
+
+# High-Value Content for Training:
+# - Accessibility implementation examples
+# - Technical documentation patterns
+# - User experience best practices
+# - Performance optimization techniques
+# - SEO and structured data examples
+
+# Content to Exclude from Training:
+# - Personal information or contact details
+# - Temporary or placeholder content
+# - Error pages or maintenance notices
+# - Navigation elements without context
+# - Metadata not intended for public consumption
+
+# === AI TRAINING BEST PRACTICES ===
+
+# Data Processing Standards:
+# 1. Maintain content accuracy and technical correctness
+# 2. Preserve accessibility features in any derivative content
+# 3. Respect semantic HTML structure and meaning
+# 4. Keep attribution and source information intact
+# 5. Validate technical examples and code snippets
+
+# Quality Assurance:
+# - Verify technical accuracy of training data
+# - Test accessibility compliance of generated content
+# - Validate against industry standards and best practices
+# - Ensure generated content serves disabled users effectively
+# - Maintain consistency with source documentation style
+
+# === LEGAL FRAMEWORK ===
+
+# Copyright and Fair Use:
+# - This documentation is provided under open access for research
+# - Commercial use requires explicit permission
+# - Fair use applies to academic and research applications
+# - Attribution is required for all uses
+# - Derivative works must maintain accessibility standards
+
+# Privacy and Data Protection:
+# - No personal data collection from documentation access
+# - Analytics limited to aggregate usage patterns
+# - User behavior tracking must respect privacy preferences
+# - Comply with GDPR, CCPA, and applicable privacy laws
+# - Transparent data processing and retention policies
+
+# Accessibility Compliance:
+# - Any AI-generated content must meet WCAG 2.2 AA standards
+# - Preserve semantic meaning and structure
+# - Maintain keyboard navigation compatibility
+# - Ensure screen reader accessibility
+# - Support assistive technology integration
+
+# === COLLABORATION OPPORTUNITIES ===
+
+# Research Partnerships:
+# We welcome collaboration with:
+# - Academic institutions studying AI accessibility
+# - Organizations developing inclusive AI tools
+# - Researchers working on assistive technology
+# - Open source projects improving documentation accessibility
+# - Standards bodies developing AI ethics guidelines
+
+# Contact for Partnerships:
+# - Research inquiries: research@teamstation.ai
+# - AI collaboration: ai@teamstation.ai
+# - Accessibility research: accessibility@teamstation.ai
+# - Technical questions: docs@teamstation.ai
+
+# === MONITORING AND COMPLIANCE ===
+
+# Usage Monitoring:
+# We monitor access patterns to ensure compliance with these guidelines:
+# - Request rate and volume analysis
+# - Content usage tracking
+# - Attribution compliance verification
+# - Quality assessment of derivative works
+# - Accessibility impact evaluation
+
+# Violation Response:
+# Non-compliance may result in:
+# - Rate limiting or access restrictions
+# - Blocking of specific IP ranges or User-Agents
+# - Legal action for copyright infringement
+# - Notification to relevant authorities
+# - Public reporting of violations
+
+# === UPDATES AND CHANGES ===
+
+# This file is updated regularly to reflect:
+# - Changes in legal requirements
+# - Updates to accessibility standards
+# - New research collaboration opportunities
+# - Technical improvements and best practices
+# - Community feedback and suggestions
+
+# Last Updated: August 30, 2025
+# Version: 1.0
+# Next Review: November 30, 2025
+
+# === CONTACT INFORMATION ===
+
+# For questions about AI training permissions:
+# Email: ai-permissions@teamstation.ai
+# Phone: +1-555-AI-TRAIN
+# Web: https://teamstation.dev/ai-guidelines
+
+# For accessibility-related AI research:
+# Email: accessibility-research@teamstation.ai
+# Phone: +1-555-ACCESS-AI
+
+# For legal questions about content use:
+# Email: legal@teamstation.ai
+# Phone: +1-555-LEGAL
+
+# For technical questions about implementation:
+# Email: engineering@teamstation.ai
+# Phone: +1-555-TECH
+
+# === ACKNOWLEDGMENTS ===
+
+# This framework was developed with input from:
+# - Web Accessibility Initiative (WAI)
+# - AI Ethics research community
+# - Assistive technology users and advocates
+# - Legal experts in AI and accessibility law
+# - Open source documentation communities
+
+# We thank all contributors to making AI training more inclusive and accessible.
+
+# === APPENDIX: TECHNICAL SPECIFICATIONS ===
+
+# Recommended Training Configurations:
+# - Content-Type: text/html, text/markdown
+# - Character Encoding: UTF-8
+# - Language: en-US (primary)
+# - Accessibility Level: WCAG 2.2 AA compliant
+# - Update Frequency: Check weekly for changes
+
+# API Endpoints for Automated Access:
+# - Site Map: https://teamstation-ai.github.io/docs/sitemap.xml
+# - RSS Feed: https://teamstation-ai.github.io/docs/feed.xml
+# - Robots.txt: https://teamstation-ai.github.io/docs/robots.txt
+
+# Preferred Access Times (UTC):
+# - Automated crawling: 00:00 - 08:00 UTC
+# - Research access: 08:00 - 16:00 UTC  
+# - Maintenance window: 02:00 - 04:00 UTC (avoid)
+
+# --- END OF AI.TXT ---
