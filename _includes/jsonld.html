@@ -1,0 +1,133 @@
+{% comment %}
+JSON-LD Structured Data for SEO
+Provides rich structured data for search engines
+{% endcomment %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "{{ site.url }}/#organization",
+      "name": "{{ site.company }}",
+      "url": "{{ site.url }}",
+      "sameAs": [
+        "https://teamstation.dev",
+        "https://github.com/TeamStation-AI"
+      ],
+      "description": "{{ site.description }}",
+      "foundingDate": "2024",
+      "knowsAbout": [
+        "Artificial Intelligence",
+        "Cognitive AI Evaluation",
+        "Enterprise AI Solutions",
+        "Nearshore IT Services",
+        "Technical Documentation",
+        "AI Platform Development"
+      ],
+      "areaServed": "Worldwide",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "AI Solutions",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "SoftwareApplication",
+              "name": "Axiom Cortex™",
+              "description": "Cognitive AI evaluation platform for enterprise solutions",
+              "applicationCategory": "BusinessApplication",
+              "operatingSystem": "Web-based"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Nearshore IT Co-Pilot™",
+              "description": "Enterprise AI solutions platform with nearshore IT services",
+              "serviceType": "IT Consulting"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{ site.url }}/#website",
+      "url": "{{ site.url }}",
+      "name": "{{ site.title }}",
+      "description": "{{ site.description }}",
+      "publisher": {
+        "@id": "{{ site.url }}/#organization"
+      },
+      "inLanguage": "en-US"
+    }
+    {% if page.title %},
+    {
+      "@type": "WebPage",
+      "@id": "{{ page.url | absolute_url }}/#webpage",
+      "url": "{{ page.url | absolute_url }}",
+      "name": "{{ page.title }}",
+      {% if page.description %}
+      "description": "{{ page.description }}",
+      {% endif %}
+      "isPartOf": {
+        "@id": "{{ site.url }}/#website"
+      },
+      "datePublished": "{{ page.date | default: site.time | date_to_xmlschema }}",
+      "dateModified": "{{ page.last_modified_at | default: page.date | default: site.time | date_to_xmlschema }}",
+      "author": {
+        "@type": "Organization",
+        "@id": "{{ site.url }}/#organization"
+      },
+      "publisher": {
+        "@id": "{{ site.url }}/#organization"
+      },
+      "inLanguage": "en-US"
+      {% if page.section == 'axiom-cortex' %},
+      "about": {
+        "@type": "SoftwareApplication",
+        "name": "Axiom Cortex™",
+        "description": "Cognitive AI evaluation platform"
+      }
+      {% elsif page.section == 'co-pilot' %},
+      "about": {
+        "@type": "Service",
+        "name": "Nearshore IT Co-Pilot™",
+        "description": "Enterprise AI solutions platform"
+      }
+      {% endif %}
+    }
+    {% endif %}
+    {% if page.section == 'axiom-cortex' %},
+    {
+      "@type": "SoftwareApplication",
+      "name": "Axiom Cortex™",
+      "description": "Advanced cognitive AI evaluation platform designed for enterprise-grade AI solution assessment and optimization",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web-based",
+      "offers": {
+        "@type": "Offer",
+        "category": "Enterprise Software"
+      },
+      "provider": {
+        "@id": "{{ site.url }}/#organization"
+      }
+    }
+    {% elsif page.section == 'co-pilot' %},
+    {
+      "@type": "Service",
+      "name": "Nearshore IT Co-Pilot™",
+      "description": "Comprehensive enterprise AI solutions platform with expert nearshore IT services and technical leadership",
+      "serviceType": "IT Consulting",
+      "areaServed": "Worldwide",
+      "provider": {
+        "@id": "{{ site.url }}/#organization"
+      }
+    }
+    {% endif %}
+  ]
+}
+</script>

@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<article class="page">
+  <header class="page-header">
+    <h1 class="page-title">{{ page.title }}</h1>
+    {% if page.description %}
+    <p class="page-description">{{ page.description }}</p>
+    {% endif %}
+    {% if page.section %}
+    <nav class="breadcrumb">
+      <a href="{{ '/' | relative_url }}">Home</a> 
+      <span class="separator">›</span>
+      <a href="{{ '/' | append: page.section | append: '/' | relative_url }}">{{ page.section | replace: '-', ' ' | capitalize }}</a>
+      <span class="separator">›</span>
+      <span class="current">{{ page.title }}</span>
+    </nav>
+    {% endif %}
+  </header>
+
+  <div class="page-content">
+    {{ content }}
+  </div>
+
+  {% if page.section %}
+  <nav class="page-navigation">
+    <h3>More in {{ page.section | replace: '-', ' ' | capitalize }}</h3>
+    <ul class="nav-links">
+      {% if page.section == 'axiom-cortex' %}
+        {% for item in site.axiom_cortex %}
+          {% unless item.url == page.url %}
+          <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          {% endunless %}
+        {% endfor %}
+      {% elsif page.section == 'co-pilot' %}
+        {% for item in site.copilot %}
+          {% unless item.url == page.url %}
+          <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          {% endunless %}
+        {% endfor %}
+      {% endif %}
+    </ul>
+  </nav>
+  {% endif %}
+</article>

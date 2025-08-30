@@ -1,0 +1,111 @@
+# Jekyll Configuration for TeamStation AI Docs
+# DNS-agnostic configuration for GitHub Pages
+
+title: "TeamStation AI Documentation"
+description: "CTO-grade documentation for Axiom Cortex™ (Cognitive AI evaluation) and the Nearshore IT Co-Pilot™ platform. Expert technical insights for enterprise AI solutions."
+url: "" # DNS-agnostic - will work with GitHub Pages default domain
+baseurl: "" # DNS-agnostic
+
+# Site settings
+author: "TeamStation AI"
+email: "docs@teamstation.ai"
+company: "TeamStation AI"
+tagline: "Enterprise AI Solutions & Cognitive Evaluation Platform"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Sass settings
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Collections
+collections:
+  axiom_cortex:
+    output: true
+    permalink: /axiom-cortex/:name/
+  copilot:
+    output: true
+    permalink: /co-pilot/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "TeamStation AI"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      author: "TeamStation AI"
+  - scope:
+      path: ""
+      type: "axiom_cortex"
+    values:
+      layout: "page"
+      author: "TeamStation AI"
+      section: "axiom-cortex"
+  - scope:
+      path: ""
+      type: "copilot"
+    values:
+      layout: "page"
+      author: "TeamStation AI"
+      section: "co-pilot"
+
+# SEO settings
+seo:
+  type: Organization
+  name: TeamStation AI
+  links:
+    - https://teamstation.dev
+    - https://github.com/TeamStation-AI
+
+# Social profiles
+social:
+  type: Organization
+  name: TeamStation AI
+  links:
+    - https://teamstation.dev
+    - https://github.com/TeamStation-AI
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+
+# Include files
+include:
+  - robots.txt
+  - humans.txt
+  - .htaccess
+
+# Permalink structure
+permalink: /:categories/:title/
+
+# Pagination
+paginate: 10
+paginate_path: "/page:num/"
+
+# Analytics and verification (placeholders for future use)
+google_analytics: 
+google_site_verification:
