@@ -1,32 +1,33 @@
-# Jekyll Configuration for TeamStation AI Docs (GitHub Pages project site)
+# TeamStation AI — Documentation Site (Jekyll)
+# Canonical host: https://docs.teamstation.dev
 
 title: "TeamStation AI Documentation"
-description: "CTO-grade documentation for Axiom Cortex™ (Cognitive AI evaluation) and the Nearshore IT Co-Pilot™ platform."
+description: "CTO-grade docs for Axiom Cortex™ (Cognitive AI evaluation) and the Nearshore IT Co-Pilot™ platform."
 
-# IMPORTANT for GitHub Pages project sites:
-url: "https://teamstation-ai.github.io"   # org/user site URL
-baseurl: "/docs"                           # repo name prefixed with /
+# IMPORTANT: custom domain canonicals
+url: "https://docs.teamstation.dev"   # full origin
+baseurl: ""                            # empty because we’re on the root of the subdomain
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
 kramdown:
-  input: GFM          # GitHub Flavored Markdown (makes links render reliably)
+  input: GFM
   hard_wrap: false
   auto_ids: true
 
-# Plugins supported by GitHub Pages
+# GitHub Pages–safe plugins
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
 
-# Sass settings
+# Sass
 sass:
   sass_dir: _sass
   style: compressed
 
-# Collections (keep Axiom Cortex pages grouped)
+# Collections
 collections:
   axiom_cortex:
     output: true
@@ -37,12 +38,6 @@ collections:
 
 # Defaults
 defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "page"
-      author: "TeamStation AI"
   - scope:
       path: ""
       type: "pages"
@@ -64,15 +59,13 @@ defaults:
       author: "TeamStation AI"
       section: "co-pilot"
 
-# SEO (jekyll-seo-tag uses this)
+# SEO / social hints
 seo:
   type: Organization
   name: TeamStation AI
   links:
     - https://teamstation.dev
     - https://github.com/TeamStation-AI
-
-# Social profile hints
 social:
   type: Organization
   name: TeamStation AI
@@ -80,10 +73,8 @@ social:
     - https://teamstation.dev
     - https://github.com/TeamStation-AI
 
-# Permalinks
+# Permalinks & includes
 permalink: pretty
-
-# Include/Exclude
 include:
   - robots.txt
   - humans.txt
