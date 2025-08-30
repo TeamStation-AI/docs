@@ -1,0 +1,35 @@
+# Site configuration for TeamStation-AI docs
+title: "TeamStation-AI Documentation"
+description: "CTO-grade docs for Axiom Cortex™ (Cognitive AI evaluation) and the Nearshore IT Co-Pilot™ platform"
+author: "TeamStation-AI"
+email: "docs@teamstation.ai"
+url: "https://teamstation-ai.github.io"
+baseurl: "/docs"
+
+# Jekyll configuration
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Build settings
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .git/
+  - .gitignore
+
+# SEO and social
+twitter_username: teamstationai
+github_username: TeamStation-AI

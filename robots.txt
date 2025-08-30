@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Allow common crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Sitemap location
+Sitemap: https://teamstation-ai.github.io/docs/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1
