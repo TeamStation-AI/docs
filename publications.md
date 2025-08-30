@@ -5,7 +5,11 @@ description: "Selected research that underpins Axiom Cortex™ and the Nearshore
 permalink: /publications/
 ---
 
-<h1>Publications & Research</h1>
+<!-- PURE HTML BELOW TO GUARANTEE CLICKABLE LINKS -->
+
+<h1>Publications &amp; Research</h1>
+
+<p><a href="/docs/" style="display:inline-block;padding:10px 14px;border:1px solid #22304f;border-radius:10px;background:#111735;color:#e6eefc;text-decoration:none">← Back to Docs Home</a></p>
 
 <p>These publications underpin Axiom Cortex™ and the Nearshore IT Co-Pilot™ platform. Each entry links to the source and notes how it supports our <strong>L2-aware evaluation</strong>, <strong>network psychometrics</strong>, and <strong>constrained decision</strong> framework.</p>
 
