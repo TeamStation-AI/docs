@@ -2,20 +2,29 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="dark light"><meta name="theme-color" content="#0b1020">
-<title>TeamStation AI — Nearshore IT Co-Pilot™ Docs (Fallback)</title>
+<title>TeamStation AI — Docs Home (Nearshore IT Co-Pilot™ & Axiom Cortex™)</title>
 <style>
 :root{--bg:#0b1020;--surface:#111735;--text:#e6eefc;--muted:#9bb0cc;--brand:#5aa2ff;--border:#22304f}
 html,body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
-main{max-width:960px;margin:40px auto;padding:0 20px;line-height:1.65}
-nav{max-width:960px;margin:20px auto;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+main{max-width:1040px;margin:40px auto;padding:0 20px;line-height:1.65}
+nav{max-width:1040px;margin:20px auto 0;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
 a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
 a:focus-visible,button:focus-visible{outline:3px solid #9cc4ff;outline-offset:2px}
 .tag{background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:6px 10px;color:var(--muted)}
-.btn{display:inline-block;padding:10px 14px;border:1px solid var(--border);border-radius:10px;background:var(--surface)}
+.btn{display:inline-block;padding:12px 16px;border:1px solid var(--border);border-radius:10px;background:var(--surface);color:var(--text);text-decoration:none}
+.btn-primary{border-color:#3b6fbd;background:#173058}
+.kicker{letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-size:.85rem}
+.grid{display:grid;gap:20px}
+.grid-2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px}
 hr{border:none;border-top:1px solid var(--border);margin:28px 0}
 .small{color:var(--muted);font-size:.95rem}
 .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
 .skip-link:focus{left:16px;top:16px;width:auto;height:auto;background:#111735;color:#e6eefc;padding:8px 12px;border:2px solid #5aa2ff;border-radius:8px;z-index:1000}
+ul.tight li{margin:6px 0}
+.callout{border:1px dashed var(--border);border-radius:12px;padding:14px;background:rgba(17,23,53,.35)}
+h1,h2,h3{line-height:1.25}
 </style>
 </head>
 <body>
@@ -26,42 +35,96 @@ hr{border:none;border-top:1px solid var(--border);margin:28px 0}
   <a href="/docs/">Docs Home</a>
   <a href="/docs/axiom-cortex/">Axiom Cortex™</a>
   <a href="/docs/publications/">Publications</a>
-  <!-- Required authority anchors -->
-  <a href="https://teamstation.dev/nearshore-it-co-pilot">nearshore IT platform</a>
+  <!-- Required authority anchors (correct platform URL) -->
+  <a href="https://teamstation.dev/nearshore-integrated-services">nearshore IT platform</a>
   <a href="https://teamstation.dev/technical-interview-evaluation">Cognitive AI evaluation</a>
   <a href="https://teamstation.dev/latam-talent">hire LATAM engineers</a>
   <a href="https://teamstation.dev/nearshore-it-staff-augmentation-pricing/flexible-secure-device-management-latam-it">devices and MDM</a>
 </nav>
 
 <main id="content" tabindex="-1">
-  <h1>Nearshore IT Co-Pilot™ & Axiom Cortex™ — Docs (Fallback)</h1>
-  <p><strong>Plain-language summary:</strong> This microsite proves our platform and science for CTOs. It’s dark-mode by default, keyboard accessible, and links to the full sections.</p>
+  <p class="kicker">Docs Home</p>
+  <h1>Nearshore IT Co-Pilot™ & Axiom Cortex™ — the why, the how, the outcomes</h1>
+  <p>We built TeamStation AI so US CTOs can extend product teams into LATAM <em>without chaos</em>: predictable hiring, day-one readiness, secure devices, and measurable performance — all under one SLA. Our Cognitive AI turns interviews into <strong>evidence</strong>, not vibes, so you get the best-aligned problem solvers faster and more fairly.</p>
 
-  <p>
-    <a class="btn" href="/docs/axiom-cortex/">Open Axiom Cortex™ Documentation →</a>
+  <p class="callout">
+    <a class="btn btn-primary" href="/docs/axiom-cortex/"><strong>Open Axiom Cortex™ Documentation →</strong></a>
     &nbsp;&nbsp;
-    <a class="btn" href="/docs/publications/">Publications & Research →</a>
+    <a class="btn" href="https://teamstation.dev/nearshore-integrated-services">See the Nearshore IT Co-Pilot™ platform →</a>
   </p>
 
-  <h2>Axiom Cortex™ — Cognitive AI</h2>
-  <ul>
-    <li>44 psychometric + NLP signals over LLMs for accurate alignment, analysis, and synthesis of nearshore IT talent.</li>
-    <li>Uses <em>semantic chunking in RAG and staged/multi-step prompting</em> with <strong>language-fairness calibration</strong>.</li>
-    <li>Includes <strong>expert review of flags before roll-up</strong>; maps results to <strong>BARS</strong> (ratings tied to observable behaviors).</li>
-  </ul>
+  <hr>
 
-  <h2>Nearshore IT Co-Pilot™ — Intelligent Services</h2>
-  <p>One platform to hire, equip, secure, and pay LATAM engineers under one SLA. Devices/MDM, security baselines, payroll/EOR, compliance, and offices—integrated.</p>
+  <div class="grid grid-2" aria-label="The Story">
+    <section class="card">
+      <h2>Why we built TeamStation AI</h2>
+      <ul class="tight">
+        <li>Hiring in LATAM was fragmented: vendors, recruiters, spreadsheets, and bias-prone interviews.</li>
+        <li>Onboarding stalled: unmanaged devices, slow access, compliance gaps, and week-one idle time.</li>
+        <li>Performance was fuzzy: opinions over observable behaviors; no shared definitions for “good.”</li>
+      </ul>
+      <p>We unified the stack into an <strong>Intelligent Services Infrastructure</strong> and paired it with a <strong>Cognitive AI Operating System</strong> so teams start productive, secure, and measurable from day one.</p>
+    </section>
 
-  <h2>Required anchors (SEO & authority)</h2>
-  <ul>
-    <li><a href="https://teamstation.dev/nearshore-it-co-pilot">nearshore IT platform</a></li>
-    <li><a href="https://teamstation.dev/technical-interview-evaluation">Cognitive AI evaluation</a></li>
-    <li><a href="https://teamstation.dev/latam-talent">hire LATAM engineers</a></li>
-    <li><a href="https://teamstation.dev/nearshore-it-staff-augmentation-pricing/flexible-secure-device-management-latam-it">devices and MDM</a></li>
-  </ul>
+    <section class="card">
+      <h2>What the Nearshore IT Co-Pilot™ does</h2>
+      <ul class="tight">
+        <li>Hire, equip, secure, and pay LATAM engineers — <strong>under one SLA</strong>.</li>
+        <li>Devices + MDM (Mobile Device Management), baseline security, identity, access, and compliance.</li>
+        <li>Payroll/EOR, benefits, and optional offices — all integrated with onboarding flows.</li>
+        <li>Process you can trust: Demo → Platform Onboarding → Post Jobs & Calibration → Interview & Evaluation → Hire & Day-One Onboarding → Performance (BARS) & Growth.</li>
+      </ul>
+      <p><a class="btn" href="https://teamstation.dev/nearshore-integrated-services">Explore integrated services →</a></p>
+    </section>
+  </div>
+
+  <div class="grid grid-2" aria-label="The Science">
+    <section class="card">
+      <h2>Axiom Cortex™ — Cognitive AI Operating System</h2>
+      <ul class="tight">
+        <li><strong>44 psychometric + NLP signals</strong> for alignment, analysis, and synthesis of engineering evidence.</li>
+        <li>Method: <em>semantic chunking in RAG and staged/multi-step prompting</em> with <strong>language-fairness calibration</strong>.</li>
+        <li><strong>Expert review of flags before roll-up</strong>; mapped to <strong>BARS</strong> (ratings tied to observable behaviors).</li>
+        <li>L2-aware scoring separates content signal from delivery noise, so ideas are judged fairly.</li>
+      </ul>
+      <p><a class="btn" href="/docs/axiom-cortex/scientific-foundations/">Read the Scientific Foundations →</a></p>
+    </section>
+
+    <section class="card">
+      <h2>Outcomes that matter</h2>
+      <ul class="tight">
+        <li><strong>Time-to-Offer ≈ 9 days</strong>; <strong>Time-to-First-PR ≤ 7–14 days</strong>.</li>
+        <li><strong>Device MTPD ≤ 5 days</strong>; <strong>MDM enrollment ≥ 99% (24h)</strong>.</li>
+        <li><strong>90-day retention ≈ 96%</strong>; <strong>50–70% savings vs. US onshore</strong>.</li>
+      </ul>
+      <p><a class="btn" href="https://teamstation.dev/latam-talent">See LATAM talent coverage →</a></p>
+    </section>
+  </div>
+
+  <div class="grid grid-2" aria-label="Proof">
+    <section class="card">
+      <h2>Publications & Research (clickable)</h2>
+      <ul class="tight">
+        <li>SSRN: <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5165433">Redesigning Human Capacity in Nearshore IT Staff Augmentation (5165433)</a> — DOI <a href="https://doi.org/10.2139/ssrn.5165433">10.2139/ssrn.5165433</a></li>
+        <li>SSRN Working Paper: <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5253470">abstract_id=5253470</a></li>
+        <li>SSRN Working Paper: <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5188490">abstract_id=5188490</a></li>
+        <li><a href="https://scholar.google.com/citations?user=aNol-ycAAAAJ">Google Scholar — TeamStation AI</a></li>
+      </ul>
+      <p><a class="btn" href="/docs/publications/">Open Publications page →</a></p>
+    </section>
+
+    <section class="card">
+      <h2>What to expect as a CTO</h2>
+      <ul class="tight">
+        <li>Clear evidence over opinions; bias-aware scoring with uncertainty bounds.</li>
+        <li>Day-one readiness: devices, access, docs, first ticket, 30-60-90 plan.</li>
+        <li>Quarterly performance with <strong>BARS</strong> and promotion signals across L1–L4.</li>
+      </ul>
+      <p><a class="btn" href="https://teamstation.dev/technical-interview-evaluation">See evaluation process →</a></p>
+    </section>
+  </div>
 
   <hr>
-  <p class="small">Trust lines: Time-to-Offer ≈ 9 days • First-PR ≤ 7–14 days • Device MTPD ≤ 5 days • MDM ≥ 99% (24h).</p>
+  <p class="small">Cognitive AI to hire, onboard, and run LATAM engineering teams — under one SLA.</p>
 </main>
 </body></html>
