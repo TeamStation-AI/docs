@@ -80,29 +80,13 @@
           <h3>Resources</h3>
           <ul>
             <li><a href="{{ '/research' | relative_url }}">Research</a></li>
-            <li><a href="https://teamstation.dev/technical-documentation" target="_blank" rel="noopener">Technical Documentation</a></li>
-            <li><a href="https://teamstation.dev/api-documentation" target="_blank" rel="noopener">API Documentation</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h3>Company</h3>
-          <ul>
-            <li><a href="https://teamstation.dev/about" target="_blank" rel="noopener">About TeamStation AI</a></li>
-            <li><a href="https://teamstation.dev/careers" target="_blank" rel="noopener">Careers</a></li>
-            <li><a href="https://teamstation.dev/contact" target="_blank" rel="noopener">Contact</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; {{ 'now' | date: "%Y" }} {{ site.company }}. All rights reserved.</p>
-        <p>
-          <a href="{{ '/humans.txt' | relative_url }}">humans.txt</a> |
-          <a href="{{ '/robots.txt' | relative_url }}">robots.txt</a> |
-          <a href="{{ '/sitemap.xml' | relative_url }}">sitemap.xml</a>
-        </p>
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
       </div>
     </div>
   </footer>
-
 </body>
 </html>
