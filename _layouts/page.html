@@ -5,28 +5,46 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Basic SEO (jekyll-seo-tag will add more if present) -->
+  {% seo %} <!-- JSON-LD + SEO tags -->
+
   <title>{{ page.title | default: site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}" />
-
-  <!-- Canonical (works with your url/baseurl from _config.yml) -->
   <link rel="canonical" href="{{ page.url | absolute_url }}" />
 
   <!-- Dark mode + theme color -->
   <meta name="color-scheme" content="dark light" />
   <meta name="theme-color" content="#0b1020" />
 
-  <!-- CSS (uses baseurl automatically) -->
+  <!-- Main CSS (respects url/baseurl) -->
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
 
-  <!-- Accessibility: visible focus even if CSS fails -->
+  <!-- Minimal accessibility fallback even if CSS fails -->
   <style>
-    :root{--bg:#0b1020;--text:#e6eefc}
+    :root{--bg:#0b1020;--surface:#111735;--text:#e6eefc;--brand:#5aa2ff;--border:#22304f}
     @media (prefers-color-scheme: dark){html,body{background:var(--bg);color:var(--text)}}
     a:focus-visible,button:focus-visible{outline:3px solid #9cc4ff;outline-offset:2px}
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{left:16px;top:16px;width:auto;height:auto;background:#111735;color:#e6eefc;padding:8px 12px;border:2px solid #5aa2ff;border-radius:8px;z-index:1000}
+    .toggle{margin-left:12px;background:var(--surface);border:1px solid var(--border);color:var(--text);padding:6px 10px;border-radius:10px;cursor:pointer}
   </style>
+
+  <script>
+    (function(){
+      const KEY='tsdocs-theme';
+      const root=document.documentElement;
+      const sys=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+      root.dataset.theme=localStorage.getItem(KEY)||sys;
+      window.toggleTheme=function(){
+        const next=root.dataset.theme==='dark'?'light':'dark';
+        root.dataset.theme=next; localStorage.setItem(KEY,next);
+      };
+      // Keyboard shortcut: T toggles theme
+      addEventListener('keydown',e=>{ if((e.key||'').toLowerCase()==='t') toggleTheme(); });
+    })();
+  </script>
 </head>
 <body class="{% if page.section %}section-{{ page.section }}{% endif %}">
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header" role="banner">
     <nav class="site-nav" aria-label="Main">
@@ -34,6 +52,7 @@
       <div class="nav-links">
         <a href="{{ '/' | relative_url }}">Home</a>
         <a href="{{ '/axiom-cortex/' | relative_url }}">Axiom Cortex™</a>
+        <button class="toggle" onclick="toggleTheme()" aria-label="Toggle dark/light">🌙/☀️ (T)</button>
       </div>
     </nav>
   </header>
@@ -54,7 +73,8 @@
         <div class="footer-section">
           <h3>Authority Links</h3>
           <ul>
-            <li><a href="https://teamstation.dev/nearshore-integrated-services">nearshore IT platform</a></li>
+            <!-- Canonical anchors (as required) -->
+            <li><a href="https://teamstation.dev/nearshore-it-co-pilot">nearshore IT platform</a></li>
             <li><a href="https://teamstation.dev/technical-interview-evaluation">Cognitive AI evaluation</a></li>
             <li><a href="https://teamstation.dev/latam-talent">hire LATAM engineers</a></li>
             <li><a href="https://teamstation.dev/nearshore-it-staff-augmentation-pricing/flexible-secure-device-management-latam-it">devices and MDM</a></li>
@@ -66,6 +86,5 @@
       </div>
     </div>
   </footer>
-
 </body>
 </html>
