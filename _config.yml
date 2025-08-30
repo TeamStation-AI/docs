@@ -2,9 +2,9 @@
 title: "TeamStation AI Documentation"
 description: "CTO-grade docs for Axiom Cortex™ (Cognitive AI evaluation) and the Nearshore IT Co-Pilot™ platform."
 
-# Canonicals for docs subdomain
+# Canonicals (MUST be set for absolute sitemap URLs)
 url: "https://docs.teamstation.dev"
-baseurl: ""  # root of the subdomain
+baseurl: ""   # root of subdomain
 
 # Build
 markdown: kramdown
@@ -14,7 +14,7 @@ kramdown:
   hard_wrap: false
   auto_ids: true
 
-# GitHub Pages–safe plugins
+# GitHub Pages–safe plugins (sitemap required)
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
@@ -22,12 +22,7 @@ plugins:
 # Pretty URLs
 permalink: pretty
 
-# Sass (optional)
-sass:
-  sass_dir: _sass
-  style: compressed
-
-# ✅ Collections (this is what makes /_axiom_cortex/ build again)
+# Collections (so /_axiom_cortex/ pages build)
 collections:
   axiom_cortex:
     output: true
@@ -58,15 +53,6 @@ defaults:
       layout: "page"
       author: "TeamStation AI"
       section: "co-pilot"
-
-# SEO / social
-seo:
-  type: Organization
-  name: TeamStation AI
-  links:
-    - https://teamstation.dev
-    - https://github.com/TeamStation-AI
-    - https://scholar.google.com/citations?user=aNol-ycAAAAJ
 
 # Exclusions
 exclude:
