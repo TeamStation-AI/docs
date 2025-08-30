@@ -1,29 +1,40 @@
-# TeamStation AI — Docs site config (custom domain)
+# TeamStation AI — Documentation (custom domain)
 title: "TeamStation AI Documentation"
 description: "CTO-grade docs for Axiom Cortex™ (Cognitive AI evaluation) and the Nearshore IT Co-Pilot™ platform."
-url: "https://docs.teamstation.dev"   # <- custom domain
-baseurl: ""                            # <- empty for root domain
 
-# Author/site
-author: "TeamStation AI"
-email: "docs@teamstation.ai"
+# Canonicals for docs subdomain
+url: "https://docs.teamstation.dev"
+baseurl: ""  # root of the subdomain
 
 # Build
 markdown: kramdown
 highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
 
-# Plugins
+# GitHub Pages–safe plugins
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Permalinks
-permalink: /:path/
+# Pretty URLs
+permalink: pretty
 
-# Sass (if you add SCSS later)
+# Sass (optional)
 sass:
   sass_dir: _sass
   style: compressed
+
+# ✅ Collections (this is what makes /_axiom_cortex/ build again)
+collections:
+  axiom_cortex:
+    output: true
+    permalink: /axiom-cortex/:name/
+  copilot:
+    output: true
+    permalink: /co-pilot/:name/
 
 # Defaults
 defaults:
@@ -33,14 +44,20 @@ defaults:
     values:
       layout: "page"
       author: "TeamStation AI"
-
-# Exclusions
-exclude:
-  - README.md
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/
+  - scope:
+      path: ""
+      type: "axiom_cortex"
+    values:
+      layout: "page"
+      author: "TeamStation AI"
+      section: "axiom-cortex"
+  - scope:
+      path: ""
+      type: "copilot"
+    values:
+      layout: "page"
+      author: "TeamStation AI"
+      section: "co-pilot"
 
 # SEO / social
 seo:
@@ -50,3 +67,11 @@ seo:
     - https://teamstation.dev
     - https://github.com/TeamStation-AI
     - https://scholar.google.com/citations?user=aNol-ycAAAAJ
+
+# Exclusions
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
