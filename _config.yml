@@ -1,28 +1,32 @@
-# TeamStation AI — Docs (GitHub Pages Project site)
-# Live site: https://teamstation-ai.github.io/docs/
+# Jekyll Configuration for TeamStation AI Docs (GitHub Pages project site)
 
 title: "TeamStation AI Documentation"
-description: "CTO-grade docs for Axiom Cortex™ (Cognitive AI) and the Nearshore IT Co-Pilot™ platform."
+description: "CTO-grade documentation for Axiom Cortex™ (Cognitive AI evaluation) and the Nearshore IT Co-Pilot™ platform."
 
-# IMPORTANT: these two lines must match your Pages URL exactly
-url: "https://teamstation-ai.github.io"
-baseurl: "/docs"
+# IMPORTANT for GitHub Pages project sites:
+url: "https://teamstation-ai.github.io"   # org/user site URL
+baseurl: "/docs"                           # repo name prefixed with /
 
+# Build settings
 markdown: kramdown
 highlighter: rouge
-permalink: pretty
-timezone: America/Mexico_City
+kramdown:
+  input: GFM          # GitHub Flavored Markdown (makes links render reliably)
+  hard_wrap: false
+  auto_ids: true
 
+# Plugins supported by GitHub Pages
 plugins:
+  - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-feed
 
+# Sass settings
 sass:
   sass_dir: _sass
   style: compressed
 
-# Publish Axiom Cortex & Co-Pilot sections
+# Collections (keep Axiom Cortex pages grouped)
 collections:
   axiom_cortex:
     output: true
@@ -31,30 +35,36 @@ collections:
     output: true
     permalink: /co-pilot/:name/
 
-# Default front-matter
+# Defaults
 defaults:
   - scope:
       path: ""
-      type: pages
+      type: "posts"
     values:
-      layout: page
+      layout: "page"
       author: "TeamStation AI"
   - scope:
       path: ""
-      type: axiom_cortex
+      type: "pages"
     values:
-      layout: page
+      layout: "page"
       author: "TeamStation AI"
-      section: axiom-cortex
   - scope:
       path: ""
-      type: copilot
+      type: "axiom_cortex"
     values:
-      layout: page
+      layout: "page"
       author: "TeamStation AI"
-      section: co-pilot
+      section: "axiom-cortex"
+  - scope:
+      path: ""
+      type: "copilot"
+    values:
+      layout: "page"
+      author: "TeamStation AI"
+      section: "co-pilot"
 
-# Used by jekyll-seo-tag
+# SEO (jekyll-seo-tag uses this)
 seo:
   type: Organization
   name: TeamStation AI
@@ -62,6 +72,7 @@ seo:
     - https://teamstation.dev
     - https://github.com/TeamStation-AI
 
+# Social profile hints
 social:
   type: Organization
   name: TeamStation AI
@@ -69,13 +80,16 @@ social:
     - https://teamstation.dev
     - https://github.com/TeamStation-AI
 
+# Permalinks
+permalink: pretty
+
+# Include/Exclude
 include:
   - robots.txt
   - humans.txt
-
 exclude:
-  - README.md
   - Gemfile
   - Gemfile.lock
   - node_modules
   - vendor/
+  - README.md
