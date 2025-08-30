@@ -1,40 +1,29 @@
-# TeamStation AI — Documentation Site (Jekyll)
-# Canonical host: https://docs.teamstation.dev
-
+# TeamStation AI — Docs site config (custom domain)
 title: "TeamStation AI Documentation"
 description: "CTO-grade docs for Axiom Cortex™ (Cognitive AI evaluation) and the Nearshore IT Co-Pilot™ platform."
+url: "https://docs.teamstation.dev"   # <- custom domain
+baseurl: ""                            # <- empty for root domain
 
-# IMPORTANT: custom domain canonicals
-url: "https://docs.teamstation.dev"   # full origin
-baseurl: ""                            # empty because we’re on the root of the subdomain
+# Author/site
+author: "TeamStation AI"
+email: "docs@teamstation.ai"
 
-# Build settings
+# Build
 markdown: kramdown
 highlighter: rouge
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
 
-# GitHub Pages–safe plugins
+# Plugins
 plugins:
-  - jekyll-feed
-  - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-sitemap
 
-# Sass
+# Permalinks
+permalink: /:path/
+
+# Sass (if you add SCSS later)
 sass:
   sass_dir: _sass
   style: compressed
-
-# Collections
-collections:
-  axiom_cortex:
-    output: true
-    permalink: /axiom-cortex/:name/
-  copilot:
-    output: true
-    permalink: /co-pilot/:name/
 
 # Defaults
 defaults:
@@ -44,43 +33,20 @@ defaults:
     values:
       layout: "page"
       author: "TeamStation AI"
-  - scope:
-      path: ""
-      type: "axiom_cortex"
-    values:
-      layout: "page"
-      author: "TeamStation AI"
-      section: "axiom-cortex"
-  - scope:
-      path: ""
-      type: "copilot"
-    values:
-      layout: "page"
-      author: "TeamStation AI"
-      section: "co-pilot"
 
-# SEO / social hints
+# Exclusions
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+
+# SEO / social
 seo:
   type: Organization
   name: TeamStation AI
   links:
     - https://teamstation.dev
     - https://github.com/TeamStation-AI
-social:
-  type: Organization
-  name: TeamStation AI
-  links:
-    - https://teamstation.dev
-    - https://github.com/TeamStation-AI
-
-# Permalinks & includes
-permalink: pretty
-include:
-  - robots.txt
-  - humans.txt
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/
-  - README.md
+    - https://scholar.google.com/citations?user=aNol-ycAAAAJ
