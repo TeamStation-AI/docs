@@ -1,50 +1,119 @@
 ---
 layout: page
-title: "Publications & Research"
-description: "Selected research that underpins Axiom Cortex™ and the Nearshore IT Co-Pilot™ platform."
+title: "Publications & Research — Axiom Cortex™"
+description: "SSRN papers and research that underpin Axiom Cortex’s L2-aware evaluation, network psychometrics, and constrained decision framework."
 permalink: /publications/
 ---
 
-<!-- PURE HTML BELOW TO GUARANTEE CLICKABLE LINKS -->
+# Publications & Research
 
-<h1>Publications &amp; Research</h1>
+These publications underpin **Axiom Cortex™** and the **Nearshore IT Co-Pilot™** platform. Each entry links to the source and notes how it supports our **language-fairness calibration**, **network psychometrics**, and **constrained decision** layers.
 
-<p><a href="/docs/" style="display:inline-block;padding:10px 14px;border:1px solid #22304f;border-radius:10px;background:#111735;color:#e6eefc;text-decoration:none">← Back to Docs Home</a></p>
+---
 
-<p>These publications underpin Axiom Cortex™ and the Nearshore IT Co-Pilot™ platform. Each entry links to the source and notes how it supports our <strong>L2-aware evaluation</strong>, <strong>network psychometrics</strong>, and <strong>constrained decision</strong> framework.</p>
+## 2025 — Redesigning Human Capacity in Nearshore IT Staff Augmentation
+**Lonnie McRorey; Dan Diachenko.** SSRN. DOI: 10.2139/ssrn.5165433  
+**Link:** <https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5165433>
 
-<hr>
+**Relevance:** Formalizes the **RC×TA→EHD** forecasting frame, ties measurement to operating KPIs, and frames a neural-search + platform integration for nearshore hiring—macro context for Axiom Cortex’s **measurement → decision** flow inside Nearshore IT Co-Pilot™.
 
-<h2>2025 — Redesigning Human Capacity in Nearshore IT Staff Augmentation</h2>
-<p><strong>Lonnie McRorey; Dan Diachenko.</strong> SSRN.<br>
-<strong>DOI:</strong> <a href="https://doi.org/10.2139/ssrn.5165433">10.2139/ssrn.5165433</a><br>
-<strong>Link:</strong> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5165433">View on SSRN</a></p>
-<p><strong>Relevance:</strong> Formalizes the <em>RC×TA→EHD</em> forecasting frame, connects measurement to operating KPIs, and describes platform integration for nearshore hiring—context for Axiom Cortex™ measurement → decision flow inside Nearshore IT Co-Pilot™.</p>
+---
 
-<hr>
+## 2025 — SSRN Working Paper (abstract_id=5253470)
+**Authors:** TeamStation AI contributors (see SSRN page)  
+**Link:** <https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5253470>
 
-<h2>2025 — SSRN Working Paper (abstract_id=5253470)</h2>
-<p><strong>Authors:</strong> TeamStation AI contributors (see SSRN page)<br>
-<strong>Link:</strong> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5253470">View on SSRN</a></p>
-<p><strong>Relevance:</strong> Extends the methodology for <strong>L2-aware evaluation</strong> and operational alignment. See SSRN page for full metadata and abstract.</p>
+**Relevance:** Extends the methodology for **L2-aware evaluation** and **operational alignment**.
 
-<hr>
+---
 
-<h2>2025 — SSRN Working Paper (abstract_id=5188490)</h2>
-<p><strong>Authors:</strong> TeamStation AI contributors (see SSRN page)<br>
-<strong>Link:</strong> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5188490">View on SSRN</a></p>
-<p><strong>Relevance:</strong> Documents elements of <strong>network psychometrics</strong> and reliability monitoring used by Axiom Cortex™. See SSRN page for full metadata and abstract.</p>
+## 2025 — SSRN Working Paper (abstract_id=5188490)
+**Authors:** TeamStation AI contributors (see SSRN page)  
+**Link:** <https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5188490>
 
-<hr>
+**Relevance:** Documents elements of **network psychometrics** and **reliability monitoring** used by Axiom Cortex™.
 
-<p><strong>Author profile on Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=aNol-ycAAAAJ">Google Scholar — TeamStation AI</a></p>
+---
 
-<hr>
+### Author profile (Google Scholar)
+- <https://scholar.google.com/citations?user=aNol-ycAAAAJ>
 
-<h3>Required anchors (authority)</h3>
-<ul>
-  <li><a href="https://teamstation.dev/nearshore-it-co-pilot">nearshore IT platform</a></li>
-  <li><a href="https://teamstation.dev/technical-interview-evaluation">Cognitive AI evaluation</a></li>
-  <li><a href="https://teamstation.dev/latam-talent">hire LATAM engineers</a></li>
-  <li><a href="https://teamstation.dev/nearshore-it-staff-augmentation-pricing/flexible-secure-device-management-latam-it">devices and MDM</a></li>
-</ul>
+---
+
+## Authority anchors (main site)
+
+- [nearshore IT platform](https://teamstation.dev/nearshore-integrated-services)  
+- [Cognitive AI evaluation](https://teamstation.dev/technical-interview-evaluation)  
+- [hire LATAM engineers](https://teamstation.dev/latam-talent)  
+- [devices and MDM](https://teamstation.dev/nearshore-it-staff-augmentation-pricing/flexible-secure-device-management-latam-it)
+
+---
+
+<p class="small">
+Trust lines: Time-to-Offer ≈ 9 days • First-PR ≤ 7–14 days • Device MTPD ≤ 5 days • MDM ≥ 99% (24h)
+</p>
+
+<!-- Structured data for scholarship -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://docs.teamstation.dev/#organization",
+      "name": "TeamStation AI",
+      "url": "https://docs.teamstation.dev/",
+      "sameAs": [
+        "https://teamstation.dev",
+        "https://github.com/TeamStation-AI",
+        "https://scholar.google.com/citations?user=aNol-ycAAAAJ"
+      ]
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.2139/ssrn.5165433",
+      "headline": "Redesigning Human Capacity in Nearshore IT Staff Augmentation",
+      "author": [
+        { "@type": "Person", "name": "Lonnie McRorey", "affiliation": "TeamStation AI" },
+        { "@type": "Person", "name": "Dan Diachenko" }
+      ],
+      "publisher": { "@type": "Organization", "name": "SSRN" },
+      "identifier": "https://doi.org/10.2139/ssrn.5165433",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5165433",
+      "about": [
+        "L2-aware evaluation",
+        "Network psychometrics",
+        "Nearshore IT staff augmentation",
+        "Decision-theoretic recommendations"
+      ],
+      "isPartOf": { "@id": "https://docs.teamstation.dev/#organization" }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "headline": "SSRN Working Paper (abstract_id=5253470)",
+      "author": { "@type": "Organization", "name": "TeamStation AI" },
+      "publisher": { "@type": "Organization", "name": "SSRN" },
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5253470",
+      "about": [
+        "L2-aware evaluation",
+        "Operational alignment",
+        "Axiom Cortex"
+      ],
+      "isPartOf": { "@id": "https://docs.teamstation.dev/#organization" }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "headline": "SSRN Working Paper (abstract_id=5188490)",
+      "author": { "@type": "Organization", "name": "TeamStation AI" },
+      "publisher": { "@type": "Organization", "name": "SSRN" },
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5188490",
+      "about": [
+        "Network psychometrics",
+        "Reliability monitoring",
+        "Axiom Cortex"
+      ],
+      "isPartOf": { "@id": "https://docs.teamstation.dev/#organization" }
+    }
+  ]
+}
+</script>
