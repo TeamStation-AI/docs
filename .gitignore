@@ -3,10 +3,18 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 
+# MkDocs build artifacts
+site/
+
 # Ruby/Gem files
 .bundle/
 vendor/
 Gemfile.lock
+
+# Python files
+__pycache__/
+*.pyc
+*.pyo
 
 # OS files
 .DS_Store
