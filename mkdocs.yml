@@ -1,0 +1,66 @@
+site_name: TeamStation AI — CTO Playbook
+site_url: https://docs.teamstation.dev
+repo_name: TeamStation-AI/docs
+repo_url: https://github.com/TeamStation-AI/docs
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+    - toc.integrate
+    - content.action.edit
+    - announce.dismiss
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: blue
+  icon:
+    logo: material/file-document-outline
+  language: en
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.inlinehilite
+  - pymdownx.highlight
+plugins:
+  - search
+nav:
+  - CTO Playbook: index.md
+  - Strategy:
+      - Executive Brief: strategy/executive-brief.md
+      - Alliance Model: strategy/alliance-model.md
+      - Platform vs. Agency: strategy/platform-vs-agency.md
+  - Platform:
+      - Nearshore IT Co-Pilot™: platform/nearshore-it-co-pilot.md
+      - Axiom Cortex™: platform/axiom-cortex.md
+      - Nebula Neural Search™: platform/nebula-neural-search.md
+      - SSOT & Governance: platform/ssot-governance.md
+      - Devices, MDM & EOR: platform/devices-mdm-eor.md
+  - Process:
+      - Overview: process/overview.md
+      - Playbook Steps: process/playbook-steps.md
+  - Performance:
+      - BARS & KPIs: performance/bars-and-kpis.md
+      - Quarterly Reviews: performance/quarterly-reviews.md
+  - Security:
+      - Security Basics: security/security-basics.md
+      - Compliance & Privacy: security/compliance-and-privacy.md
+  - ROI:
+      - Metrics: roi/metrics.md
+      - Estimator & Pricing: roi/estimator-links.md
+  - RFP Toolkit:
+      - Evaluation Checklist: rfp/evaluation-checklist.md
+      - Scoring Rubric: rfp/scoring-rubric.md
+  - Resources:
+      - Book & Papers: resources/book-and-papers.md
+      - Glossary: resources/glossary.md
+  - FAQ: faq/alliance-faq.md
