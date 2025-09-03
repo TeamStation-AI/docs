@@ -1,0 +1,119 @@
+site_name: CTO Playbook - TeamStation AI
+site_url: https://docs.teamstation.dev/cto-playbook/
+site_description: Strategic guidance for CTOs implementing Axiom Cortex™ and Nearshore IT Co-Pilot™
+
+# Repository
+repo_name: TeamStation-AI/docs
+repo_url: https://github.com/TeamStation-AI/docs
+edit_uri: edit/main/docs/
+
+# Configuration
+theme:
+  name: material
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.action.edit
+
+# Documentation structure
+docs_dir: docs
+site_dir: site/cto-playbook
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Executive Summary: getting-started/executive-summary.md
+    - ROI Calculator: getting-started/roi-calculator.md
+    - Implementation Timeline: getting-started/timeline.md
+  - Strategic Framework:
+    - Nearshore Strategy: strategy/nearshore-strategy.md
+    - Team Scaling: strategy/team-scaling.md
+    - Risk Management: strategy/risk-management.md
+  - Technical Implementation:
+    - Architecture Overview: technical/architecture.md
+    - Integration Guide: technical/integration.md
+    - Security Framework: technical/security.md
+  - Operations Playbook:
+    - Hiring Workflow: operations/hiring-workflow.md
+    - Performance Management: operations/performance-management.md
+    - Cost Optimization: operations/cost-optimization.md
+  - Metrics & KPIs:
+    - Success Metrics: metrics/success-metrics.md
+    - Reporting Templates: metrics/reporting.md
+  - Resources:
+    - PDF Downloads: resources/pdf-downloads.md
+    - Case Studies: resources/case-studies.md
+    - FAQ: resources/faq.md
+
+# Plugins
+plugins:
+  - search
+  - autorefs
+
+# Markdown extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: TeamStation-AI
+      repo: docs
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Extra
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/TeamStation-AI
+    - icon: fontawesome/solid/globe
+      link: https://teamstation.dev
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
