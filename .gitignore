@@ -3,6 +3,9 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 
+# MkDocs build artifacts
+site/
+
 # Ruby/Gem files
 .bundle/
 vendor/
